@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Postcard from the White Desert - make yours free - Explore White Desert</title>
+<meta name="description" content="Type your name and get a personal postcard written in the sand of Egypt's White Desert. Share it free - and book your own night under the stars on WhatsApp.">
+<link rel="canonical" href="https://explorewhitedesert.github.io/postcard/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Explore White Desert">
+<meta property="og:title" content="A postcard from the White Desert, with your name in the sand">
+<meta property="og:description" content="Type your name, get your own desert postcard, share it free. Real photos from our own safaris in Egypt's White Desert.">
+<meta property="og:url" content="https://explorewhitedesert.github.io/postcard/">
+<meta property="og:image" content="https://explorewhitedesert.github.io/img/postcard-sample.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A postcard from the White Desert, with your name in the sand">
+<meta name="twitter:description" content="Type your name, get your own desert postcard, share it free. Real photos from our own safaris in Egypt's White Desert.">
+<meta name="twitter:image" content="https://explorewhitedesert.github.io/img/postcard-sample.jpg">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sand:#f7f1e7; --sand-dark:#efe5d4; --ink:#211c16; --ink-soft:#5a5044;
+  --accent:#c1561f; --accent-dark:#9a4212; --white:#fffdf9; --wa:#1faa55; --wa-dark:#158443;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--sand);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+h1,h2{font-family:"Bricolage Grotesque",-apple-system,"Segoe UI",sans-serif;line-height:1.08;letter-spacing:-.015em;font-weight:800}
+h1{font-size:clamp(2.1rem,6vw,3.4rem)}
+.lede{color:var(--ink-soft);font-size:1.06rem;max-width:46em}
+.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:.75rem;font-weight:800;color:var(--accent);margin-bottom:.7rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;background:var(--wa);color:#fff;font-weight:700;font-size:1.02rem;padding:.85em 1.5em;border-radius:999px;text-decoration:none;border:0;cursor:pointer;box-shadow:0 6px 20px rgba(31,170,85,.35);transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(31,170,85,.45)}
+.btn svg{width:1.2em;height:1.2em;flex:none}
+.btn-ink{background:var(--ink);box-shadow:0 6px 20px rgba(33,28,22,.3)}
+.btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--ink);box-shadow:none}
+.btn-ghost:hover{background:rgba(33,28,22,.06);box-shadow:none}
+.nav{background:rgba(20,14,8,.92);color:#fff}
+.nav-in{display:flex;align-items:center;gap:18px;padding:14px 20px;max-width:1120px;margin:0 auto}
+.brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.06rem;color:#fff;text-decoration:none;white-space:nowrap}
+.langs{margin-left:auto;display:flex;gap:2px;font-size:.8rem;font-weight:700}
+.langs a{color:rgba(255,255,255,.65);text-decoration:none;padding:4px 6px;border-radius:6px}
+.langs a.on{color:#fff;background:rgba(255,255,255,.14)}
+section{padding:56px 0}
+/* GENERATOR */
+.gen{display:grid;gap:32px;align-items:start}
+@media(min-width:900px){.gen{grid-template-columns:1fr 1fr;gap:48px}}
+.panel{background:var(--white);border-radius:20px;padding:26px;box-shadow:0 4px 18px rgba(33,28,22,.08)}
+label{display:block;font-weight:700;font-size:.9rem;margin:16px 0 6px}
+input[type=text]{width:100%;padding:.8em 1em;border:2px solid var(--sand-dark);border-radius:12px;font-size:1.05rem;font-family:inherit;background:var(--sand);color:var(--ink)}
+input[type=text]:focus{outline:none;border-color:var(--accent)}
+.hint{font-size:.8rem;color:var(--ink-soft);margin-top:4px}
+.bgpick{display:flex;gap:10px;margin-top:8px}
+.bgpick button{border:3px solid transparent;border-radius:12px;padding:0;cursor:pointer;background:none;overflow:hidden;width:76px;height:76px;flex:none}
+.bgpick button.on{border-color:var(--accent)}
+.bgpick img{width:100%;height:100%;object-fit:cover;display:block}
+#card{width:100%;border-radius:18px;box-shadow:0 14px 40px rgba(33,28,22,.22);display:block}
+.share-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.note{font-size:.84rem;color:var(--ink-soft);margin-top:14px}
+.copy-ok{color:var(--wa-dark);font-weight:700;font-size:.9rem;margin-top:8px;display:none}
+/* VIEW MODE (shared card) */
+.viewmode{text-align:center}
+.viewmode h1{margin:26px 0 6px}
+.viewmode .lede{margin:0 auto}
+/* CTA */
+.cta-band{background:var(--ink);color:var(--sand);text-align:center}
+.cta-band h2{font-size:clamp(1.6rem,4vw,2.4rem)}
+.cta-band p{max-width:44em;margin:.5em auto 1.4em;color:rgba(247,241,231,.75)}
+footer{padding:40px 0;color:var(--ink-soft);font-size:.85rem;text-align:center}
+footer b{color:var(--ink)}
+footer a{color:var(--ink-soft);margin:0 8px}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:70;background:rgba(20,14,8,.94);backdrop-filter:blur(8px);padding:10px 16px;display:flex;justify-content:center}
+.sticky .btn{padding:.7em 1.4em;font-size:.95rem}
+body{padding-bottom:70px}
+[dir=rtl] .wrap{text-align:right}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-in">
+  <a class="brand" href="/">Explore White Desert</a>
+  <div class="langs" id="langs"></div>
+</div></nav>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow" id="ui-eyebrow">Free &amp; personal</div>
+    <h1 id="ui-h1">A postcard from the White Desert, with your name in the sand.</h1>
+    <p class="lede" id="ui-lede" style="margin:.7em 0 2em">Type a name, pick a view from our own safaris, and get a personal postcard to share. Every card carries a link back here, so your friends can make theirs too.</p>
+
+    <!-- GENERATOR -->
+    <div class="gen" id="gen">
+      <div class="panel">
+        <label for="name" id="ui-l-name">Name on the card</label>
+        <input type="text" id="name" maxlength="24" placeholder="Layla" autocomplete="off">
+        <div class="hint" id="ui-h-name">Up to 24 characters. Arabic names welcome.</div>
+        <label for="msg" id="ui-l-msg">Short line (optional)</label>
+        <input type="text" id="msg" maxlength="80" placeholder="" autocomplete="off">
+        <label id="ui-l-bg">Background</label>
+        <div class="bgpick" id="bgpick"></div>
+        <div class="share-row">
+          <button class="btn btn-ink" id="b-download" type="button"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3a1 1 0 0 1 1 1v9.6l2.8-2.8a1 1 0 1 1 1.4 1.4l-4.5 4.5a1 1 0 0 1-1.4 0l-4.5-4.5a1 1 0 1 1 1.4-1.4l2.8 2.8V4a1 1 0 0 1 1-1zM5 19h14a1 1 0 1 1 0 2H5a1 1 0 1 1 0-2z"/></svg><span id="ui-b-download">Download card</span></button>
+        </div>
+        <div class="share-row">
+          <a class="btn" id="b-share" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.4-3c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.5 4 5.3 5.3 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg><span id="ui-b-share">Share on WhatsApp</span></a>
+          <button class="btn btn-ghost" id="b-copy" type="button"><span id="ui-b-copy">Copy card link</span></button>
+        </div>
+        <div class="copy-ok" id="copy-ok">Link copied!</div>
+        <p class="note" id="ui-note">The card is generated on your device - nothing you type is stored. Sharing the link brings your friends back to make their own.</p>
+      </div>
+      <div><canvas id="card" width="1080" height="1080"></canvas></div>
+    </div>
+
+    <!-- VIEW MODE (opened from a shared link) -->
+    <div class="viewmode" id="view" style="display:none">
+      <canvas id="vcard" width="1080" height="1080" style="max-width:560px;width:100%;margin:0 auto;border-radius:18px;box-shadow:0 14px 40px rgba(33,28,22,.22)"></canvas>
+      <h1 id="v-h1"></h1>
+      <p class="lede" id="v-lede"></p>
+      <div class="share-row" style="justify-content:center">
+        <a class="btn btn-ink" id="v-own" href="/postcard/"><span id="ui-v-own">Make your own postcard</span></a>
+        <a class="btn" id="v-share" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.4-3c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.5 4 5.3 5.3 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg><span id="ui-v-share">Forward this card</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2 id="ui-cta-h">The real thing beats the postcard.</h2>
+    <p id="ui-cta-p">Two days and one night in Egypt's White Desert: 4x4 drives, the Black Desert, Crystal Mountain, chalk formations, a Bedouin dinner and a sky full of stars. Message us on WhatsApp for the price and dates.</p>
+    <a class="btn" id="b-book" href="https://wa.me/201278220004" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.4-3c-.3-.4 0-.5.1-.7l-.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.5 4 5.3 5.3 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg><span id="ui-b-book">Book on WhatsApp</span></a>
+  </div>
+</section>
+
+<footer>
+  <b>Explore White Desert</b><br>
+  <a href="/">Home</a><a href="/white-desert-safari-2-days/">The trip</a><a href="/guides/">Guides</a><br>
+  <br><span class="findus">Find us on: <a href="https://www.brownbook.net/business/56149864/explore-white-desert" rel="noopener">Brownbook</a> &middot; <a href="https://jointradel.com/providers/explore-white-desert" rel="noopener">Tradel</a> &middot; <a href="https://linktr.ee/explorewhitedesert" rel="noopener">Linktree</a> &middot; <a href="https://www.flickr.com/photos/205165954@N03/" rel="noopener">Flickr</a> &middot; <a href="https://www.reddit.com/user/ExploreWhiteDesert/" rel="noopener">Reddit</a> &middot; <a href="https://www.quora.com/profile/Kimo-Nasr-2" rel="noopener">Quora</a> &middot; <a href="https://explorewhitedesert.substack.com/" rel="noopener">Substack</a> &middot; <a href="https://www.atlasobscura.com/users/explorewhitedesert" rel="noopener">Atlas Obscura</a> &middot; <a href="https://worldtouroperators.com" rel="noopener">WorldTourOperators</a></span>
+  <small>&copy; 2026 Explore White Desert &middot; Cairo, Egypt &middot; All photos from our own trips</small>
+</footer>
+<div class="sticky">
+  <a class="btn" id="b-book2" href="https://wa.me/201278220004" rel="noopener"><span id="ui-b-book2">Book on WhatsApp</span></a>
+</div>
+
+<script>
+(function(){
+"use strict";
+var WA_NUMBER="201278220004";
+var SITE="https://explorewhitedesert.github.io";
+var PHOTOS=[
+  {src:"/img/mushroom-chicken.jpg",label:"Mushroom Rock"},
+  {src:"/img/sunset-silhouette.jpg",label:"Sunset"},
+  {src:"/img/camp-sunrise.jpg",label:"Camp sunrise"}
+];
+var I18N={
+en:{eyebrow:"Free & personal",h1:"A postcard from the White Desert, with your name in the sand.",lede:"Type a name, pick a view from our own safaris, and get a personal postcard to share. Every card carries a link back here, so your friends can make theirs too.",lName:"Name on the card",hName:"Up to 24 characters. Arabic names welcome.",lMsg:"Short line (optional)",mPh:"Wish you were here!",lBg:"Background",bDownload:"Download card",bShare:"Share on WhatsApp",bCopy:"Copy card link",copied:"Link copied!",note:"The card is generated on your device - nothing you type is stored. Sharing the link brings your friends back to make their own.",vOwn:"Make your own postcard",vShare:"Forward this card",vH1:function(n){return n+" sent you a postcard from the White Desert."},vLede:"Real photo from one of our safaris. Make your own card, or come see it in person.",ctaH:"The real thing beats the postcard.",ctaP:"Two days and one night in Egypt's White Desert: 4x4 drives, the Black Desert, Crystal Mountain, chalk formations, a Bedouin dinner and a sky full of stars. Message us on WhatsApp for the price and dates.",bBook:"Book on WhatsApp",cardTag:"GREETINGS FROM THE WHITE DESERT",cardLine:"Book your own night under the stars",shareText:function(n){return n+" sent you a postcard from Egypt's White Desert - make yours free:"},bookText:"Hi Explore White Desert! I'd like to book the 2-day White Desert safari from Cairo. Please send me the price and available dates.",defaultMsg:"Wish you were here!"},
+ar:{eyebrow:"مجاني وشخصي",h1:"بوسطة من الصحراء البيضاء باسمك على الرمل.",lede:"اكتب اسمك، اختار منظر من رحلاتنا، وهتطلعلك بوسطة شخصية تشيرها. كل كارت فيه لينك يرجع هنا، فصحابك يقدروا يعملوا كروتهم كمان.",lName:"الاسم على الكارت",hName:"لحد 24 حرف. الأسماء العربية مرحب بيها.",lMsg:"جملة قصيرة (اختياري)",mPh:"وحشتني هنا!",lBg:"الخلفية",bDownload:"حمّل الكارت",bShare:"شير على واتساب",bCopy:"انسخ لينك الكارت",copied:"اللينك اتنسخ!",note:"الكارت بيتعمل على جهازك - مش بنخزن أي حاجة تكتبها. مشاركة اللينك بترجع صحابك يعملوا كروتهم.",vOwn:"اعمل البوسطة بتاعتك",vShare:"ابعت الكارت ده",vH1:function(n){return n+" بعتلك بوسطة من الصحراء البيضاء."},vLede:"صورة حقيقية من رحلاتنا. اعمل كارتك بنفسك، أو تعالى شوف المكان على الطبيعة.",ctaH:"الحقيقة أحلى من البوسطة.",ctaP:"يومين وليلة في الصحراء البيضاء في مصر: طرق بالدفع الرباعي، الصحراء السودا، جبل الكريستال، تشكيلات الطباشير، عشا بدوي وسماء مليانة نجوم. كلمنا واتساب للسعر والمعاد.",bBook:"احجز على واتساب",cardTag:"تحياتي من الصحراء البيضاء",cardLine:"احجز ليلتك تحت النجوم",shareText:function(n){return n+" بعتلك بوسطة من الصحراء البيضاء في مصر - اعمل بتاعتك مجانا:"},bookText:"Hi Explore White Desert! I'd like to book the 2-day White Desert safari from Cairo. Please send me the price and available dates.",defaultMsg:"وحشتني هنا!"},
+de:{eyebrow:"Kostenlos & persönlich",h1:"Eine Postkarte aus der Weißen Wüste, mit deinem Namen im Sand.",lede:"Namen eingeben, einen Ausblick von unseren eigenen Safaris wählen und eine persönliche Postkarte zum Teilen bekommen. Jede Karte verlinkt zurück hierher, damit deine Freunde ihre eigene machen können.",lName:"Name auf der Karte",hName:"Bis zu 24 Zeichen. Arabische Namen willkommen.",lMsg:"Kurze Zeile (optional)",mPh:"Schade, dass du nicht hier bist!",lBg:"Hintergrund",bDownload:"Karte herunterladen",bShare:"Auf WhatsApp teilen",bCopy:"Kartenlink kopieren",copied:"Link kopiert!",note:"Die Karte wird auf deinem Gerät erstellt - nichts wird gespeichert. Der geteilte Link bringt deine Freunde zurück, damit sie ihre eigene Karte machen.",vOwn:"Mach deine eigene Postkarte",vShare:"Karte weiterleiten",vH1:function(n){return n+" schickt dir eine Postkarte aus der Weißen Wüste."},vLede:"Echtes Foto von einer unserer Safaris. Mach deine eigene Karte - oder komm und sieh es selbst.",ctaH:"Das Original schlägt jede Postkarte.",ctaP:"Zwei Tage und eine Nacht in Ägyptens Weißer Wüste: 4x4-Touren, Schwarze Wüste, Kristallberg, Kreidefelsen, Beduinen-Dinner und ein Himmel voller Sterne. Schreib uns auf WhatsApp für Preis und Termine.",bBook:"Per WhatsApp buchen",cardTag:"GRÜSSE AUS DER WEISSEN WÜSTE",cardLine:"Buche deine eigene Nacht unter den Sternen",shareText:function(n){return n+" schickt dir eine Postkarte aus Ägyptens Weißer Wüste - mach deine eigene kostenlos:"},bookText:"Hi Explore White Desert! I'd like to book the 2-day White Desert safari from Cairo. Please send me the price and available dates.",defaultMsg:"Schade, dass du nicht hier bist!"},
+fr:{eyebrow:"Gratuit & personnel",h1:"Une carte postale du Désert Blanc, avec votre nom dans le sable.",lede:"Tapez un nom, choisissez un paysage de nos propres safaris et recevez une carte postale personnelle à partager. Chaque carte ramène ici, pour que vos amis créent la leur.",lName:"Nom sur la carte",hName:"24 caractères max. Les noms arabes sont les bienvenus.",lMsg:"Petite ligne (optionnel)",mPh:"Tu me manques ici !",lBg:"Arrière-plan",bDownload:"Télécharger la carte",bShare:"Partager sur WhatsApp",bCopy:"Copier le lien",copied:"Lien copié !",note:"La carte est générée sur votre appareil - rien n'est enregistré. Le lien partagé ramène vos amis créer la leur.",vOwn:"Créez votre propre carte",vShare:"Transférer cette carte",vH1:function(n){return n+" vous envoie une carte postale du Désert Blanc."},vLede:"Vraie photo de l'un de nos safaris. Créez votre carte - ou venez voir sur place.",ctaH:"La réalité dépasse la carte postale.",ctaP:"Deux jours et une nuit dans le Désert Blanc égyptien : pistes en 4x4, Désert Noir, Montagne de Cristal, formations de craie, dîner bédouin et ciel étoilé. Écrivez-nous sur WhatsApp pour le prix et les dates.",bBook:"Réserver sur WhatsApp",cardTag:"SALUTATIONS DU DÉSERT BLANC",cardLine:"Réservez votre nuit sous les étoiles",shareText:function(n){return n+" vous envoie une carte postale du Désert Blanc en Égypte - créez la vôtre gratuitement :"},bookText:"Hi Explore White Desert! I'd like to book the 2-day White Desert safari from Cairo. Please send me the price and available dates.",defaultMsg:"Tu me manques ici !"},
+es:{eyebrow:"Gratis y personal",h1:"Una postal del Desierto Blanco, con tu nombre en la arena.",lede:"Escribe un nombre, elige una vista de nuestros propios safaris y obtén una postal personal para compartir. Cada tarjeta enlaza de vuelta aquí, para que tus amigos hagan la suya.",lName:"Nombre en la tarjeta",hName:"Hasta 24 caracteres. Nombres en árabe bienvenidos.",lMsg:"Línea corta (opcional)",mPh:"¡Ojalá estuvieras aquí!",lBg:"Fondo",bDownload:"Descargar tarjeta",bShare:"Compartir en WhatsApp",bCopy:"Copiar enlace",copied:"¡Enlace copiado!",note:"La tarjeta se genera en tu dispositivo - no guardamos nada. El enlace compartido trae a tus amigos a crear la suya.",vOwn:"Crea tu propia postal",vShare:"Reenviar esta tarjeta",vH1:function(n){return n+" te envía una postal del Desierto Blanco."},vLede:"Foto real de uno de nuestros safaris. Crea tu tarjeta - o ven a verlo en persona.",ctaH:"La realidad supera a la postal.",ctaP:"Dos días y una noche en el Desierto Blanco de Egipto: rutas en 4x4, Desierto Negro, Montaña de Cristal, formaciones de tiza, cena beduina y un cielo lleno de estrellas. Escríbenos por WhatsApp para precio y fechas.",bBook:"Reservar por WhatsApp",cardTag:"SALUDOS DESDE EL DESIERTO BLANCO",cardLine:"Reserva tu noche bajo las estrellas",shareText:function(n){return n+" te envía una postal del Desierto Blanco de Egipto - crea la tuya gratis:"},bookText:"Hi Explore White Desert! I'd like to book the 2-day White Desert safari from Cairo. Please send me the price and available dates.",defaultMsg:"¡Ojalá estuvieras aquí!"},
+it:{eyebrow:"Gratis e personale",h1:"Una cartolina dal Deserto Bianco, con il tuo nome sulla sabbia.",lede:"Scrivi un nome, scegli un panorama dai nostri safari e ottieni una cartolina personale da condividere. Ogni cartolina riporta qui, così i tuoi amici possono creare la loro.",lName:"Nome sulla cartolina",hName:"Fino a 24 caratteri. Nomi arabi benvenuti.",lMsg:"Riga breve (facoltativa)",mPh:"Vorrei che fossi qui!",lBg:"Sfondo",bDownload:"Scarica la cartolina",bShare:"Condividi su WhatsApp",bCopy:"Copia il link",copied:"Link copiato!",note:"La cartolina viene generata sul tuo dispositivo - non salviamo nulla. Il link condiviso riporta i tuoi amici a creare la loro.",vOwn:"Crea la tua cartolina",vShare:"Inoltra questa cartolina",vH1:function(n){return n+" ti manda una cartolina dal Deserto Bianco."},vLede:"Foto vera da uno dei nostri safari. Crea la tua cartolina - o vieni a vederlo di persona.",ctaH:"La realtà batte la cartolina.",ctaP:"Due giorni e una notte nel Deserto Bianco d'Egitto: piste in 4x4, Deserto Nero, Montagna di Cristallo, formazioni di gesso, cena beduina e un cielo pieno di stelle. Scrivici su WhatsApp per prezzo e date.",bBook:"Prenota su WhatsApp",cardTag:"SALUTI DAL DESERTO BIANCO",cardLine:"Prenota la tua notte sotto le stelle",shareText:function(n){return n+" ti manda una cartolina dal Deserto Bianco d'Egitto - crea la tua gratis:"},bookText:"Hi Explore White Desert! I'd like to book the 2-day White Desert safari from Cairo. Please send me the price and available dates.",defaultMsg:"Vorrei che fossi qui!"}
+};
+var S=location.search,QP=new URLSearchParams(S);
+var lang=(QP.get("lang")||"").toLowerCase();
+if(!I18N[lang]){var nl=(navigator.language||"en").slice(0,2).toLowerCase();lang=I18N[nl]?nl:"en";}
+var T=I18N[lang];
+if(lang==="ar"){document.documentElement.setAttribute("dir","rtl");document.documentElement.setAttribute("lang","ar");}
+function $(id){return document.getElementById(id)}
+function setText(id,txt){var e=$(id);if(e)e.textContent=txt;}
+function enc(s){return encodeURIComponent(s)}
+function isArabic(s){return /[\u0600-\u06FF]/.test(s)}
+function gc(path){try{if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:path,event:true});}catch(e){}}
+
+/* language switcher */
+(function(){var l=$("langs"),html="";["en","ar","de","fr","es","it"].forEach(function(c){html+='<a href="/postcard/?lang='+c+'"'+(c===lang?' class="on"':"")+">"+c.toUpperCase()+"</a>";});l.innerHTML=html;})();
+
+/* static UI labels */
+setText("ui-eyebrow",T.eyebrow);setText("ui-h1",T.h1);setText("ui-lede",T.lede);
+setText("ui-l-name",T.lName);setText("ui-h-name",T.hName);setText("ui-l-msg",T.lMsg);
+setText("ui-l-bg",T.lBg);setText("ui-b-download",T.bDownload);setText("ui-b-share",T.bShare);
+setText("ui-b-copy",T.bCopy);setText("copy-ok",T.copied);setText("ui-note",T.note);
+setText("ui-v-own",T.vOwn);setText("ui-v-share",T.vShare);
+setText("ui-cta-h",T.ctaH);setText("ui-cta-p",T.ctaP);
+setText("ui-b-book",T.bBook);setText("ui-b-book2",T.bBook);
+$("msg").placeholder=T.mPh;
+var bookHref="https://wa.me/"+WA_NUMBER+"?text="+enc(T.bookText);
+$("b-book").href=bookHref;$("b-book2").href=bookHref;
+
+/* images */
+var imgs=[],imgIdx=0;
+function loadImg(i){return new Promise(function(res){var im=new Image();im.onload=function(){imgs[i]=im;res(im);};im.onerror=function(){res(null);};im.src=PHOTOS[i].src;});}
+var fontsReady=(document.fonts&&document.fonts.ready)?document.fonts.ready:Promise.resolve();
+
+/* card rendering */
+function drawCard(cv,name,msg,idx){
+  var ctx=cv.getContext("2d"),W=1080,H=1080,im=imgs[idx];
+  ctx.clearRect(0,0,W,H);
+  if(im){
+    var s=Math.max(W/im.width,H/im.height),dw=im.width*s,dh=im.height*s;
+    ctx.drawImage(im,(W-dw)/2,(H-dh)/2,dw,dh);
+  }else{ctx.fillStyle="#d9c49a";ctx.fillRect(0,0,W,H);}
+  /* bottom gradient */
+  var g=ctx.createLinearGradient(0,H*0.42,0,H);
+  g.addColorStop(0,"rgba(20,14,8,0)");g.addColorStop(0.62,"rgba(20,14,8,0.55)");g.addColorStop(1,"rgba(20,14,8,0.88)");
+  ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+  /* top stamp */
+  ctx.textAlign="left";ctx.direction="ltr";
+  ctx.fillStyle="rgba(255,253,249,0.92)";
+  ctx.font="800 26px 'Bricolage Grotesque', sans-serif";
+  ctx.fillText("EXPLORE WHITE DESERT",46,66);
+  ctx.font="700 20px 'Bricolage Grotesque', sans-serif";
+  ctx.fillStyle="rgba(255,253,249,0.66)";
+  ctx.fillText("EGYPT \u00B7 SAHARA EL BEYDA",46,96);
+  /* tag line */
+  var ar=isArabic(name+" "+msg);
+  ctx.textAlign="center";
+  ctx.direction=ar?"rtl":"ltr";
+  ctx.font="800 30px 'Bricolage Grotesque', 'Cairo', sans-serif";
+  ctx.fillStyle="rgba(243,226,184,0.95)";
+  ctx.save();ctx.translate(W/2,H*0.66);ctx.rotate(ar?0:-0.012);
+  ctx.fillText(T.cardTag,0,0);
+  /* name, sand-written look (coords relative to the translated origin at H*0.66) */
+  var nf=(ar?"700 118px Cairo":"700 128px Caveat")+", sans-serif";
+  ctx.font=nf;
+  if(ctx.measureText(name).width>W*0.86){var k=(W*0.86)/ctx.measureText(name).width;var base=ar?118:128;ctx.font=(ar?"700 ":"700 ")+Math.floor(base*k)+"px "+(ar?"Cairo":"Caveat")+", sans-serif";}
+  ctx.fillStyle="rgba(90,60,25,0.85)";
+  ctx.fillText(name,4,H*0.10+5);
+  ctx.fillStyle="#f3e2b8";
+  ctx.fillText(name,0,H*0.10);
+  /* message */
+  if(msg){
+    ctx.font=(ar?"600 40px Cairo":"600 44px Caveat")+", sans-serif";
+    ctx.fillStyle="rgba(255,253,249,0.92)";
+    ctx.fillText(msg,0,H*0.175);
+  }
+  ctx.restore();
+  /* bottom bar */
+  ctx.direction="ltr";ctx.textAlign="center";
+  ctx.font="700 30px 'Bricolage Grotesque', sans-serif";
+  ctx.fillStyle="rgba(255,253,249,0.95)";
+  ctx.fillText(T.cardLine+"  \u00B7  wa.me/"+WA_NUMBER,W/2,H*0.93);
+  ctx.font="700 24px 'Bricolage Grotesque', sans-serif";
+  ctx.fillStyle="rgba(255,253,249,0.6)";
+  ctx.fillText("explorewhitedesert.github.io",W/2,H*0.965);
+}
+function cardUrl(name,msg,idx){
+  var u=SITE+"/postcard/?name="+enc(name)+"&img="+idx;
+  if(msg)u+="&msg="+enc(msg);
+  if(lang!=="en")u+="&lang="+lang;
+  return u+"#card";
+}
+function shareHref(name,msg,idx){
+  return "https://wa.me/?text="+enc(T.shareText(name)+" "+cardUrl(name,msg,idx));
+}
+
+/* ---- mode: view shared card ---- */
+var qName=(QP.get("name")||"").slice(0,24),qMsg=(QP.get("msg")||"").slice(0,80),qImg=parseInt(QP.get("img")||"0",10);
+if(isNaN(qImg)||qImg<0||qImg>=PHOTOS.length)qImg=0;
+if(qName){
+  $("gen").style.display="none";$("view").style.display="block";
+  document.title=qName+" - "+T.h1;
+  setText("v-h1",T.vH1(qName));setText("v-lede",T.vLede);
+  $("v-own").href="/postcard/"+(lang!=="en"?"?lang="+lang:"");
+  $("v-share").href=shareHref(qName,qMsg,qImg);
+  Promise.all([loadImg(qImg),fontsReady]).then(function(){drawCard($("vcard"),qName,qMsg,qImg);gc("postcard-viewed");});
+}else{
+  /* ---- mode: generator ---- */
+  var bp=$("bgpick"),html="";
+  PHOTOS.forEach(function(p,i){html+='<button type="button" data-i="'+i+'"'+(i===0?' class="on"':"")+'><img src="'+p.src+'" alt="'+p.label+'" loading="lazy"></button>';});
+  bp.innerHTML=html;
+  var nameEl=$("name"),msgEl=$("msg");
+  function curName(){var v=nameEl.value.trim().slice(0,24);return v||"Layla";}
+  function curMsg(){return msgEl.value.trim().slice(0,80);}
+  function refresh(){
+    drawCard($("card"),curName(),curMsg(),imgIdx);
+    $("b-share").href=shareHref(curName(),curMsg(),imgIdx);
+  }
+  bp.addEventListener("click",function(e){
+    var b=e.target.closest("button");if(!b)return;
+    imgIdx=parseInt(b.getAttribute("data-i"),10);
+    bp.querySelectorAll("button").forEach(function(x){x.classList.remove("on")});
+    b.classList.add("on");
+    if(imgs[imgIdx])refresh();else loadImg(imgIdx).then(refresh);
+  });
+  var t;function deb(){clearTimeout(t);t=setTimeout(refresh,120);}
+  nameEl.addEventListener("input",deb);msgEl.addEventListener("input",deb);
+  Promise.all([loadImg(0),loadImg(1),loadImg(2),fontsReady]).then(refresh);
+  $("b-share").addEventListener("click",function(){gc("postcard-shared");});
+  $("b-copy").addEventListener("click",function(){
+    var u=cardUrl(curName(),curMsg(),imgIdx);
+    function done(){$("copy-ok").style.display="block";setTimeout(function(){$("copy-ok").style.display="none"},2500);gc("postcard-copied");}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(u).then(done,done);}else{var ta=document.createElement("textarea");ta.value=u;document.body.appendChild(ta);ta.select();try{document.execCommand("copy")}catch(e){}document.body.removeChild(ta);done();}
+  });
+  $("b-download").addEventListener("click",function(){
+    drawCard($("card"),curName(),curMsg(),imgIdx);
+    $("card").toBlob(function(b){
+      if(!b)return;
+      var a=document.createElement("a");
+      a.href=URL.createObjectURL(b);
+      a.download="white-desert-postcard-"+(curName().replace(/[^\w\u0600-\u06FF-]+/g,"_")||"card")+".png";
+      document.body.appendChild(a);a.click();
+      setTimeout(function(){URL.revokeObjectURL(a.href);document.body.removeChild(a);},4000);
+      gc("postcard-downloaded");
+    },"image/png");
+  });
+  gc("postcard-generator-open");
+}
+})();
+</script>
+<script data-goatcounter="https://explorewhitedesert.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
