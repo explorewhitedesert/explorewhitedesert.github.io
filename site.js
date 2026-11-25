@@ -36,6 +36,14 @@ panel.querySelector(".ewd-send").addEventListener("click", function(e){
 });
 document.body.appendChild(fab);
 document.body.appendChild(panel);
+/* lift the FAB/panel above the sticky mobile CTA bar when the page has one */
+var sticky = document.querySelector(".sticky");
+if (sticky) {
+ var h = sticky.offsetHeight || 64;
+ fab.style.bottom = (h + 14) + "px";
+ panel.style.bottom = (h + 74) + "px";
+ var langSel = document.querySelector(".ewd-lang");
+}
 
 /* Language switcher (built from hreflang alternates) */
 var alts = document.querySelectorAll('link[rel="alternate"][hreflang]');
@@ -53,6 +61,7 @@ if (alts.length > 1) {
    sel.appendChild(o);
  });
  sel.addEventListener("change", function(){ location.href = sel.value; });
+ if (sticky) sel.style.bottom = (sticky.offsetHeight || 64) + 12 + "px";
  document.body.appendChild(sel);
 }
 
