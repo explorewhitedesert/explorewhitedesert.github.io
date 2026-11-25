@@ -460,4 +460,46 @@
 <url><loc>https://explorewhitedesert.github.io/sv/</loc><xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io//"/><xhtml:link rel="alternate" hreflang="de" href="https://explorewhitedesert.github.io/de/"/><xhtml:link rel="alternate" hreflang="fr" href="https://explorewhitedesert.github.io/fr/"/><xhtml:link rel="alternate" hreflang="es" href="https://explorewhitedesert.github.io/es/"/><xhtml:link rel="alternate" hreflang="it" href="https://explorewhitedesert.github.io/it/"/><xhtml:link rel="alternate" hreflang="pt" href="https://explorewhitedesert.github.io/pt/"/><xhtml:link rel="alternate" hreflang="ru" href="https://explorewhitedesert.github.io/ru/"/><xhtml:link rel="alternate" hreflang="ja" href="https://explorewhitedesert.github.io/ja/"/><xhtml:link rel="alternate" hreflang="ko" href="https://explorewhitedesert.github.io/ko/"/><xhtml:link rel="alternate" hreflang="nl" href="https://explorewhitedesert.github.io/nl/"/><xhtml:link rel="alternate" hreflang="sv" href="https://explorewhitedesert.github.io/sv/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/"/></url>
 <url><loc>https://explorewhitedesert.github.io/pl/</loc><xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io//"/><xhtml:link rel="alternate" hreflang="de" href="https://explorewhitedesert.github.io/de/"/><xhtml:link rel="alternate" hreflang="fr" href="https://explorewhitedesert.github.io/fr/"/><xhtml:link rel="alternate" hreflang="es" href="https://explorewhitedesert.github.io/es/"/><xhtml:link rel="alternate" hreflang="it" href="https://explorewhitedesert.github.io/it/"/><xhtml:link rel="alternate" hreflang="pt" href="https://explorewhitedesert.github.io/pt/"/><xhtml:link rel="alternate" hreflang="ru" href="https://explorewhitedesert.github.io/ru/"/><xhtml:link rel="alternate" hreflang="ja" href="https://explorewhitedesert.github.io/ja/"/><xhtml:link rel="alternate" hreflang="ko" href="https://explorewhitedesert.github.io/ko/"/><xhtml:link rel="alternate" hreflang="nl" href="https://explorewhitedesert.github.io/nl/"/><xhtml:link rel="alternate" hreflang="sv" href="https://explorewhitedesert.github.io/sv/"/><xhtml:link rel="alternate" hreflang="pl" href="https://explorewhitedesert.github.io/pl/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/"/></url>
 <url><loc>https://explorewhitedesert.github.io/da/</loc><xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io//"/><xhtml:link rel="alternate" hreflang="de" href="https://explorewhitedesert.github.io/de/"/><xhtml:link rel="alternate" hreflang="fr" href="https://explorewhitedesert.github.io/fr/"/><xhtml:link rel="alternate" hreflang="es" href="https://explorewhitedesert.github.io/es/"/><xhtml:link rel="alternate" hreflang="it" href="https://explorewhitedesert.github.io/it/"/><xhtml:link rel="alternate" hreflang="pt" href="https://explorewhitedesert.github.io/pt/"/><xhtml:link rel="alternate" hreflang="ru" href="https://explorewhitedesert.github.io/ru/"/><xhtml:link rel="alternate" hreflang="ja" href="https://explorewhitedesert.github.io/ja/"/><xhtml:link rel="alternate" hreflang="ko" href="https://explorewhitedesert.github.io/ko/"/><xhtml:link rel="alternate" hreflang="nl" href="https://explorewhitedesert.github.io/nl/"/><xhtml:link rel="alternate" hreflang="sv" href="https://explorewhitedesert.github.io/sv/"/><xhtml:link rel="alternate" hreflang="pl" href="https://explorewhitedesert.github.io/pl/"/><xhtml:link rel="alternate" hreflang="da" href="https://explorewhitedesert.github.io/da/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/"/></url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/blog/white-desert-rock-formations/</loc>
+  <lastmod>2026-11-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/es/blog/white-desert-rock-formations/</loc>
+  <lastmod>2026-11-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/pl/blog/white-desert-rock-formations/</loc>
+  <lastmod>2026-11-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/nl/blog/white-desert-rock-formations/</loc>
+  <lastmod>2026-11-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/da/blog/white-desert-rock-formations/</loc>
+  <lastmod>2026-11-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/de/blog/white-desert-rock-formations/</loc>
+  <lastmod>2026-11-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/ko/blog/white-desert-rock-formations/</loc>
+  <lastmod>2026-11-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+ </url>
 </urlset>
