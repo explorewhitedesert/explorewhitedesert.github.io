@@ -79,3 +79,6 @@ if (art) {
  art.appendChild(sh);
 }
 })();
+
+/* PWA service worker */
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("/sw.js").catch(function(){}); }
