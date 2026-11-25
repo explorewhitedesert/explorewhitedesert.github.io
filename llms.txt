@@ -30,3 +30,9 @@
 - Instagram: https://www.instagram.com/explore_white_desert/
 - Facebook: https://www.facebook.com/WhiteDesertTours/
 - Pinterest: https://www.pinterest.com/explorewhitedesert/
+
+## Blog
+- [White Desert Blog](https://explorewhitedesert.github.io/blog/): stories and practical answers from our trips
+- [White Desert night sky](https://explorewhitedesert.github.io/blog/white-desert-night-sky/): stargazing on an overnight trip
+- [Bedouin camp dinner](https://explorewhitedesert.github.io/blog/bedouin-camp-dinner/): what the camp meal is like
+- [First White Desert trip](https://explorewhitedesert.github.io/blog/first-white-desert-trip/): the 10 things every guest asks
