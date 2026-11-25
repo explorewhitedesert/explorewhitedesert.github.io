@@ -20,7 +20,8 @@ var T = {
  ko:{fab:"WhatsApp",title:"여행 계획하기",sub:"원하시는 날짜를 알려 주세요. 당일 답변드립니다.",date:"원하시는 날짜 (예: 12월 12-13일)",size:"그룹 인원",send:"WhatsApp으로 보내기",msg:"안녕하세요 Explore White Desert! 카이로 출발 화이트 사막 1박 2일 사파리를 예약하고 싶습니다.",when:"날짜",people:"명",share:"이 페이지 공유:",price:"가격과 예약 가능한 날짜를 보내 주세요."}
 };
 var t = T[lang] || T.en;
-function openWa(text){ window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(text), "_blank", "noopener"); }
+function countBookingWa(){ try{ if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({path: "booking-whatsapp", event: true}); }catch(e){} }
+function openWa(text){ countBookingWa(); window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(text), "_blank", "noopener"); }
 
 /* Floating WhatsApp button + inquiry panel */
 var fab = document.createElement("button");
@@ -72,6 +73,12 @@ if (alts.length > 1) {
  if (sticky) sel.style.bottom = (sticky.offsetHeight || 64) + 12 + "px";
  document.body.appendChild(sel);
 }
+
+/* Analytics: count taps on direct wa.me booking anchors (share link wa.me/?text= carries no number and is not counted) */
+document.addEventListener("click", function(ev){
+ var a = ev.target && ev.target.closest ? ev.target.closest('a[href*="wa.me/201278220004"]') : null;
+ if (a) countBookingWa();
+}, true);
 
 /* Share buttons after the main article/trip content */
 var art = document.querySelector("article");
