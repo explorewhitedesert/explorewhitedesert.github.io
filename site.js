@@ -43,15 +43,11 @@ panel.querySelector(".ewd-send").addEventListener("click", function(e){
  var msg = t.msg + " " + t.price + (d ? " " + t.when + ": " + d + "." : "") + " " + n + " " + t.people + ".";
  openWa(msg);
 });
-document.body.appendChild(fab);
-document.body.appendChild(panel);
-/* lift the FAB/panel above the sticky mobile CTA bar when the page has one */
+/* one sticky CTA per page: skip the FAB when the page has a sticky bottom bar */
 var sticky = document.querySelector(".sticky");
-if (sticky) {
- var h = sticky.offsetHeight || 64;
- fab.style.bottom = (h + 14) + "px";
- panel.style.bottom = (h + 74) + "px";
- var langSel = document.querySelector(".ewd-lang");
+if (!sticky) {
+ document.body.appendChild(fab);
+ document.body.appendChild(panel);
 }
 
 /* Language switcher (built from hreflang alternates) */
