@@ -23,6 +23,13 @@
 - Reviews: 5.0/5 on TripAdvisor ("White Desert Adventure", Bawiti): https://www.tripadvisor.com/Attraction_Review-g303850-d32977405-Reviews-White_Desert_Adventure-Bawiti_Giza_Governorate.html
 
 ## Links
+
+## About the operator
+- About us: https://explorewhitedesert.github.io/about/ - family-run by Kimo Nasr, born in Bawiti; running trips since 2001; Ministry of Tourism licence 1542884; team of 9 Bedouin-origin guides with first-aid training.
+- Reviews: https://explorewhitedesert.github.io/reviews/ - 5.0 from 12 TripAdvisor reviews
+- Contact and booking: https://explorewhitedesert.github.io/contact/ - WhatsApp +20 127 822 0004, reply within minutes, payment after the trip, free cancellation
+- Photo gallery (all real trip photos): https://explorewhitedesert.github.io/gallery/
+
 - Website: https://explorewhitedesert.github.io/
 - Guides hub: https://explorewhitedesert.github.io/guides/
 - Web Story: https://explorewhitedesert.github.io/stories/white-desert-safari/
@@ -43,7 +50,7 @@
 - [Solo in the White Desert](https://explorewhitedesert.github.io/blog/white-desert-solo-traveler/): small groups and safety for solo travelers
 
 ## Trip pages
-- [White Desert stargazing](https://explorewhitedesert.github.io/white-desert-stargazing/): a night under the Milky Way (EN/DE/FR/ES/IT)
-- [White Desert photography tour](https://explorewhitedesert.github.io/white-desert-photography-tour/): golden hour to Milky Way (EN/DE/FR/ES/IT)
+- [White Desert stargazing](https://explorewhitedesert.github.io/white-desert-stargazing/): a night under the desert stars (EN/DE/FR/ES/IT)
+- [White Desert photography tour](https://explorewhitedesert.github.io/white-desert-photography-tour/): golden hour to night sky (EN/DE/FR/ES/IT)
 - [White Desert honeymoon](https://explorewhitedesert.github.io/white-desert-honeymoon/): private desert night for couples (EN/DE/FR)
 - [White Desert in December](https://explorewhitedesert.github.io/guides/white-desert-in-december/): weather, packing, Christmas camping
