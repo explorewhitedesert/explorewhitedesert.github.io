@@ -114,3 +114,10 @@ document.addEventListener("click", function(ev){
   el.textContent = "\u2713 copied";
   setTimeout(function(){ el.textContent = old; }, 1400);
 }, true);
+
+/* close language dropdown on outside tap */
+document.addEventListener('click', function(e){
+  document.querySelectorAll('details.langdd[open]').forEach(function(d){
+    if (!d.contains(e.target)) d.open = false;
+  });
+}, true);

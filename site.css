@@ -35,3 +35,19 @@
 
 /* fix: HTML height attribute hint was overriding aspect-ratio boxes, making gallery/photo images render 1000+ px tall */
 img,video{height:auto}
+
+/* image placeholders: warm sand tint while loading (no beige flash) */
+img{background:linear-gradient(180deg,#efe5d3,#e6dbc4)}
+
+/* language globe dropdown */
+details.langdd{display:inline-block}
+details.langdd summary{list-style:none;display:none;cursor:pointer;align-items:center;gap:6px;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,.14);color:#fff;font-weight:700;font-size:.85rem}
+details.langdd summary::-webkit-details-marker{display:none}
+details.langdd>.langs{display:flex}
+@media (max-width:900px){
+  details.langdd{position:relative}
+  details.langdd summary{display:inline-flex}
+  details.langdd>.langs{display:none;position:absolute;top:calc(100% + 6px);inset-inline-end:0;background:#140e08;border-radius:12px;padding:6px;min-width:120px;box-shadow:0 12px 32px rgba(0,0,0,.45);z-index:80;flex-direction:column;gap:0}
+  details.langdd[open]>.langs{display:flex}
+  details.langdd>.langs a{padding:9px 14px;font-size:.9rem;border-radius:8px;white-space:nowrap}
+}
