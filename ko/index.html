@@ -163,7 +163,7 @@ summary::after{content:"+";position:absolute;right:0;top:-2px;font-size:1.4rem;c
 details[open] summary::after{content:"\2212"}
 details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 /* CTA BAND */
-.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.jpg') center/cover;color:#fff;text-align:center;padding:88px 0}
+.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.webp') center/cover;color:#fff;text-align:center;padding:88px 0}
 .cta-band h2{color:#fff}
 .cta-band p{max-width:38em;margin:0 auto 26px;opacity:.93}
 /* REVIEWS */
@@ -175,7 +175,7 @@ details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 .quote p{font-size:.98rem;font-style:italic}
 .quote .who{margin-top:12px;font-size:.82rem;font-style:normal;color:var(--ink-soft);font-weight:600}
 /* SEASONAL BANNER */
-.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.jpg') center/cover;color:#fff;text-align:center;padding:64px 0}
+.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.webp') center/cover;color:#fff;text-align:center;padding:64px 0}
 .season h2{color:#fff}
 .season p{max-width:40em;margin:0 auto 24px;opacity:.93}
 .season .tag{display:inline-block;background:var(--accent);padding:.35em .9em;border-radius:999px;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
@@ -201,10 +201,21 @@ footer small{opacity:.6;font-size:.8rem}
 .sticky{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;display:flex;justify-content:center;pointer-events:none}
 .sticky .btn{pointer-events:auto;width:100%;max-width:420px;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 @media(min-width:821px){.sticky{left:auto;right:24px;bottom:24px}.sticky .btn{width:auto}}
+
+.flash-offer{position:fixed;top:0;left:0;right:0;z-index:70;background:linear-gradient(90deg,#92400e,#b45309);color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:8px 12px;line-height:1.35}
+.flash-offer a{color:#fff;text-decoration:none}
+.flash-offer a:hover{text-decoration:underline}
+.nav{top:36px}
+@media(max-width:759px){
+.nav-in{flex-wrap:wrap;gap:8px;padding:10px 14px}
+.nav-right{margin-left:auto;gap:10px}
+.nav .langs{order:3;width:100%;overflow-x:auto;scrollbar-width:none;padding-top:2px}
+.nav .langs::-webkit-scrollbar{display:none}
+}
 </style>
 <link rel="stylesheet" href="/site.css">
 </head>
-<body>
+<body><div class="flash-offer"><a href="https://wa.me/201278220004?text=Hi%21%20I%27d%20like%20to%20claim%20the%20December%20offer%20FLASH15." rel="noopener">12월 혜택: 15% 할인 · 코드 FLASH15 · 선착순 5건 · WhatsApp으로 신청 →</a></div>
 <nav class="nav"><div class="nav-in">
 <a class="brand" href="/ko/">Explore White Desert</a>
 <div class="nav-links"><a href="/ko/#journey">여정</a><a href="/ko/#camp">사막의 밤</a><a href="/ko/hayan-sagmak-safari-2il/">투어 일정</a><a href="/ko/#faq">FAQ</a></div>
@@ -213,8 +224,8 @@ footer small{opacity:.6;font-size:.8rem}
 
 <header class="hero">
   <picture>
-    <source media="(min-width: 769px)" srcset="/img/hero-desktop.jpg">
-    <img width="1170" height="1554" src="/img/hero-mobile.jpg" alt="바람이 빚어낸 이집트 백사막의 드넓은 하얀 석회암 대지" fetchpriority="high">
+    <source media="(min-width: 769px)" srcset="/img/hero-desktop.webp">
+    <img width="1170" height="1554" src="/img/hero-mobile.webp" alt="바람이 빚어낸 이집트 백사막의 드넓은 하얀 석회암 대지" fetchpriority="high">
   </picture>
   <div class="hero-inner wrap">
     <div class="badge">10월~4월 시즌 · 소규모 그룹 · 카이로 출발</div>
@@ -239,7 +250,7 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="eyebrow reveal">여정</div>
     <h2 class="reveal">카이로에서 4시간,<br>다른 행성이 펼쳐집니다.</h2>
     <p class="lede reveal">카이로에서 남쪽으로 달리면 검은 화산 언덕, 모래언덕에 숨은 차가운 샘, 아가바트 계곡의 황금빛 절벽을 지나 세상이 하얗게 바뀝니다.</p>
-    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.jpg" alt="흑사막" loading="lazy"></div><div class="pad"><h3>흑사막</h3><p>약 1억 8천만 년 전에 만들어진, 검은 현무암으로 덮인 화산 언덕.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.jpg" alt="차가운 샘에서 수영" loading="lazy"></div><div class="pad"><h3>차가운 샘에서 수영</h3><p>모래언덕 사이에 숨은 천연 샘. 사막의 수영장입니다.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.jpg" alt="아가바트 계곡" loading="lazy"></div><div class="pad"><h3>아가바트 계곡</h3><p>황금빛 모래언덕과 하얀 석회암 절벽. 대부분의 여행자가 서둘러 지나치는 곳을 저희는 천천히 즐깁니다.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.jpg" alt="백사막" loading="lazy"></div><div class="pad"><h3>백사막</h3><p>수천 년 동안 바람이 깎아 만든 하얀 버섯 바위와 거대한 기둥들.</p></div></div></div>
+    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.webp" alt="흑사막" loading="lazy"></div><div class="pad"><h3>흑사막</h3><p>약 1억 8천만 년 전에 만들어진, 검은 현무암으로 덮인 화산 언덕.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.webp" alt="차가운 샘에서 수영" loading="lazy"></div><div class="pad"><h3>차가운 샘에서 수영</h3><p>모래언덕 사이에 숨은 천연 샘. 사막의 수영장입니다.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.webp" alt="아가바트 계곡" loading="lazy"></div><div class="pad"><h3>아가바트 계곡</h3><p>황금빛 모래언덕과 하얀 석회암 절벽. 대부분의 여행자가 서둘러 지나치는 곳을 저희는 천천히 즐깁니다.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.webp" alt="백사막" loading="lazy"></div><div class="pad"><h3>백사막</h3><p>수천 년 동안 바람이 깎아 만든 하얀 버섯 바위와 거대한 기둥들.</p></div></div></div>
   </div>
 </section>
 
@@ -247,9 +258,9 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="split">
       <div class="photos reveal">
-        <img width="1080" height="1350" src="/img/camp-sunrise.jpg" alt="일출 무렵의 사막 캠프, 텐트와 러그와 테이블" loading="lazy">
-        <img width="959" height="960" src="/img/campfire-tents.jpg" alt="밤에 알록달록한 돔 텐트 앞에서 타오르는 모닥불" loading="lazy">
-        <img width="960" height="1280" src="/img/food-spread.jpg" alt="빵, 딥 소스, 망고, 샐러드가 차려진 베두인 저녁 식사" loading="lazy">
+        <img width="1080" height="1350" src="/img/camp-sunrise.webp" alt="일출 무렵의 사막 캠프, 텐트와 러그와 테이블" loading="lazy">
+        <img width="959" height="960" src="/img/campfire-tents.webp" alt="밤에 알록달록한 돔 텐트 앞에서 타오르는 모닥불" loading="lazy">
+        <img width="960" height="1280" src="/img/food-spread.webp" alt="빵, 딥 소스, 망고, 샐러드가 차려진 베두인 저녁 식사" loading="lazy">
       </div>
       <div class="reveal">
         <div class="eyebrow">사막의 밤</div>
@@ -265,7 +276,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="eyebrow reveal">갤러리</div>
     <h2 class="reveal">여기 있는 사진은 모두 실제 사진입니다.<br>저희 투어에서 직접 찍었습니다.</h2>
-    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.jpg" alt="머쉬룸 락의 골든 아워" loading="lazy"><figcaption>머쉬룸 락의 골든 아워</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.jpg" alt="석양 실루엣" loading="lazy"><figcaption>석양 실루엣</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.jpg" alt="저녁 햇살" loading="lazy"><figcaption>저녁 햇살</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.jpg" alt="모닥불에 끓이는 차" loading="lazy"><figcaption>모닥불에 끓이는 차</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.jpg" alt="머쉬룸 락의 게스트" loading="lazy"><figcaption>머쉬룸 락의 게스트</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.jpg" alt="석양 속 캠프" loading="lazy"><figcaption>석양 속 캠프</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.jpg" alt="하얀 천연 아치" loading="lazy"><figcaption>하얀 천연 아치</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.jpg" alt="저희 4WD 크루" loading="lazy"><figcaption>저희 4WD 크루</figcaption></figure><figure class="gal reveal"><img width="1156" height="520" src="/img/guest-smiling.jpg" alt="세상의 꼭대기에서" loading="lazy"><figcaption>세상의 꼭대기에서</figcaption></figure><figure class="gal reveal"><img width="715" height="536" src="/img/guests-women.jpg" alt="유럽에서 온 게스트" loading="lazy"><figcaption>유럽에서 온 게스트</figcaption></figure></div>
+    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.webp" alt="머쉬룸 락의 골든 아워" loading="lazy"><figcaption>머쉬룸 락의 골든 아워</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.webp" alt="석양 실루엣" loading="lazy"><figcaption>석양 실루엣</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.webp" alt="저녁 햇살" loading="lazy"><figcaption>저녁 햇살</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.webp" alt="모닥불에 끓이는 차" loading="lazy"><figcaption>모닥불에 끓이는 차</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.webp" alt="머쉬룸 락의 게스트" loading="lazy"><figcaption>머쉬룸 락의 게스트</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.webp" alt="석양 속 캠프" loading="lazy"><figcaption>석양 속 캠프</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.webp" alt="하얀 천연 아치" loading="lazy"><figcaption>하얀 천연 아치</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.webp" alt="저희 4WD 크루" loading="lazy"><figcaption>저희 4WD 크루</figcaption></figure><figure class="gal reveal"><img width="1156" height="520" src="/img/guest-smiling.webp" alt="세상의 꼭대기에서" loading="lazy"><figcaption>세상의 꼭대기에서</figcaption></figure><figure class="gal reveal"><img width="715" height="536" src="/img/guests-women.webp" alt="유럽에서 온 게스트" loading="lazy"><figcaption>유럽에서 온 게스트</figcaption></figure></div>
   </div>
 </section>
 
@@ -312,9 +323,9 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="split">
       <div class="reveal"><h3 style="margin-top:1.4rem">카이로(CAI)로 이동</h3><p class="lede">한국에서 카이로까지는 직항 또는 경유 항공편을 이용하세요. 카이로에 도착하면 시내에서 하룻밤 머물고, 다음 날 아침 7시에 호텔로 픽업하러 갑니다. 그다음 날 저녁이면 호텔로 돌아옵니다.</p><h3 style="margin-top:1.4rem">비자</h3><p class="lede">많은 국적의 여행자가 카이로 공항에서 도착 비자(약 25달러)를 받거나 미리 온라인 e-Visa를 신청할 수 있습니다. 출발 전에 본인 국적의 최신 규정을 꼭 확인하세요.</p><h3 style="margin-top:1.4rem">방문하기 좋은 시기</h3><p class="lede">10월부터 4월이 시즌입니다. 낮에는 20~25°C의 맑은 날씨라 한국의 추운 겨울을 피해 떠나기 좋습니다. 12월부터 2월은 성수기이니 일찍 예약하세요.</p><h3 style="margin-top:1.4rem">준비물</h3><p class="lede">사막의 밤을 위한 따뜻한 겉옷, 자외선 차단제, 선글라스, 카메라. 텐트, 매트리스, 담요, 식사와 음료는 모두 저희가 준비합니다.</p></div>
       <div class="photos reveal">
-        <img width="1200" height="1593" src="/img/campfire-night.jpg" alt="밤 백사막 캠프의 모닥불 위 주전자" loading="lazy">
-        <img width="960" height="1280" src="/img/guest-selfie.jpg" alt="백사막 석양 속에서 셀카를 찍는 게스트" loading="lazy">
-        <img width="960" height="1280" src="/img/black-desert.jpg" alt="카이로에서 오는 길에 보이는 황금빛 모래 위의 흑사막 화산" loading="lazy">
+        <img width="1200" height="1593" src="/img/campfire-night.webp" alt="밤 백사막 캠프의 모닥불 위 주전자" loading="lazy">
+        <img width="960" height="1280" src="/img/guest-selfie.webp" alt="백사막 석양 속에서 셀카를 찍는 게스트" loading="lazy">
+        <img width="960" height="1280" src="/img/black-desert.webp" alt="카이로에서 오는 길에 보이는 황금빛 모래 위의 흑사막 화산" loading="lazy">
       </div>
     </div>
   </div>
@@ -324,7 +335,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap reveal">
     <div class="eyebrow">자주 묻는 질문</div>
     <h2>궁금하신 점에 미리 답해드립니다.</h2>
-    <details><summary>백사막은 어디에 있나요?</summary><p>백사막(사하라 엘 베이다)은 카이로에서 남서쪽으로 약 370km, 파라프라 오아시스 근처의 보호구역입니다. 저희 코스는 바하리야 오아시스, 흑사막, 아가바트 계곡도 함께 둘러봅니다.</p></details><details><summary>방문하기 가장 좋은 시기는 언제인가요?</summary><p>10월부터 4월입니다. 낮에는 20~25°C의 온화하고 맑은 날씨, 밤에는 서늘하고 상쾌합니다. 겨울 햇살을 찾아 떠나기에 완벽합니다. 여름에도 운영하지만 낮에는 덥습니다.</p></details><details><summary>가격에 무엇이 포함되나요?</summary><p>캠핑 장비, 카이로 왕복 4WD 이동, 모든 식사, 음료, 베두인 가이드, 보호구역 입장권이 포함됩니다. 현재 가격과 날짜는 WhatsApp으로 문의해 주세요.</p></details><details><summary>어떻게 예약하나요?</summary><p>WhatsApp +20 127 822 0004로 메시지를 보내주세요. 가격, 가능한 날짜, 필요한 모든 정보를 보내드립니다. 투어를 직접 운영하는 팀과 바로 소통하며 중간 업체는 없습니다.</p></details><details><summary>캠핑이나 사파리 경험이 필요한가요?</summary><p>전혀 필요 없습니다. 운전, 캠프 설치, 요리는 베두인 가이드가 모두 맡습니다. 밤을 위한 따뜻한 옷, 자외선 차단제, 카메라만 챙겨오세요.</p></details><details><summary>혼자 여행하는 분이나 여성에게도 좋은가요?</summary><p>네. 투어는 소규모 그룹으로 진행되어 혼자 오신 분도 처음부터 끝까지 편안한 그룹의 일원이 됩니다. 유럽에서 혼자 오는 여성 게스트도 많습니다.</p></details>
+    <details><summary>요금은 얼마인가요?</summary><p>날짜와 인원에 따라 달라집니다. WhatsApp으로 문의하시면 몇 분 안에 최신 요금과 가능한 날짜를 알려드립니다. 부담 없이 문의하세요.</p></details><details><summary>백사막은 어디에 있나요?</summary><p>백사막(사하라 엘 베이다)은 카이로에서 남서쪽으로 약 370km, 파라프라 오아시스 근처의 보호구역입니다. 저희 코스는 바하리야 오아시스, 흑사막, 아가바트 계곡도 함께 둘러봅니다.</p></details><details><summary>방문하기 가장 좋은 시기는 언제인가요?</summary><p>10월부터 4월입니다. 낮에는 20~25°C의 온화하고 맑은 날씨, 밤에는 서늘하고 상쾌합니다. 겨울 햇살을 찾아 떠나기에 완벽합니다. 여름에도 운영하지만 낮에는 덥습니다.</p></details><details><summary>가격에 무엇이 포함되나요?</summary><p>캠핑 장비, 카이로 왕복 4WD 이동, 모든 식사, 음료, 베두인 가이드, 보호구역 입장권이 포함됩니다. 현재 가격과 날짜는 WhatsApp으로 문의해 주세요.</p></details><details><summary>어떻게 예약하나요?</summary><p>WhatsApp +20 127 822 0004로 메시지를 보내주세요. 가격, 가능한 날짜, 필요한 모든 정보를 보내드립니다. 투어를 직접 운영하는 팀과 바로 소통하며 중간 업체는 없습니다.</p></details><details><summary>캠핑이나 사파리 경험이 필요한가요?</summary><p>전혀 필요 없습니다. 운전, 캠프 설치, 요리는 베두인 가이드가 모두 맡습니다. 밤을 위한 따뜻한 옷, 자외선 차단제, 카메라만 챙겨오세요.</p></details><details><summary>혼자 여행하는 분이나 여성에게도 좋은가요?</summary><p>네. 투어는 소규모 그룹으로 진행되어 혼자 오신 분도 처음부터 끝까지 편안한 그룹의 일원이 됩니다. 유럽에서 혼자 오는 여성 게스트도 많습니다.</p></details>
   </div>
 </section>
 <section class="cta-band">

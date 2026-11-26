@@ -162,7 +162,7 @@ summary::after{content:"+";position:absolute;right:0;top:-2px;font-size:1.4rem;c
 details[open] summary::after{content:"\2212"}
 details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 /* CTA BAND */
-.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.jpg') center/cover;color:#fff;text-align:center;padding:88px 0}
+.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.webp') center/cover;color:#fff;text-align:center;padding:88px 0}
 .cta-band h2{color:#fff}
 .cta-band p{max-width:38em;margin:0 auto 26px;opacity:.93}
 /* REVIEWS */
@@ -174,7 +174,7 @@ details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 .quote p{font-size:.98rem;font-style:italic}
 .quote .who{margin-top:12px;font-size:.82rem;font-style:normal;color:var(--ink-soft);font-weight:600}
 /* SEASONAL BANNER */
-.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.jpg') center/cover;color:#fff;text-align:center;padding:64px 0}
+.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.webp') center/cover;color:#fff;text-align:center;padding:64px 0}
 .season h2{color:#fff}
 .season p{max-width:40em;margin:0 auto 24px;opacity:.93}
 .season .tag{display:inline-block;background:var(--accent);padding:.35em .9em;border-radius:999px;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
@@ -200,10 +200,21 @@ footer small{opacity:.6;font-size:.8rem}
 .sticky{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;display:flex;justify-content:center;pointer-events:none}
 .sticky .btn{pointer-events:auto;width:100%;max-width:420px;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 @media(min-width:821px){.sticky{left:auto;right:24px;bottom:24px}.sticky .btn{width:auto}}
+
+.flash-offer{position:fixed;top:0;left:0;right:0;z-index:70;background:linear-gradient(90deg,#92400e,#b45309);color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:8px 12px;line-height:1.35}
+.flash-offer a{color:#fff;text-decoration:none}
+.flash-offer a:hover{text-decoration:underline}
+.nav{top:36px}
+@media(max-width:759px){
+.nav-in{flex-wrap:wrap;gap:8px;padding:10px 14px}
+.nav-right{margin-left:auto;gap:10px}
+.nav .langs{order:3;width:100%;overflow-x:auto;scrollbar-width:none;padding-top:2px}
+.nav .langs::-webkit-scrollbar{display:none}
+}
 </style>
 <link rel="stylesheet" href="/site.css">
 </head>
-<body>
+<body><div class="flash-offer"><a href="https://wa.me/201278220004?text=Hi%21%20I%27d%20like%20to%20claim%20the%20December%20offer%20FLASH15." rel="noopener">Oferta de diciembre: 15% dto. · código FLASH15 · primeras 5 reservas · pídela por WhatsApp →</a></div>
 <nav class="nav"><div class="nav-in">
 <a class="brand" href="/es/">Explore White Desert</a>
 <div class="nav-links"><a href="/es/#journey">El viaje</a><a href="/es/#camp">La noche</a><a href="/es/safari-desierto-blanco-2-dias/">Programa</a><a href="/es/#faq">FAQ</a></div>
@@ -212,8 +223,8 @@ footer small{opacity:.6;font-size:.8rem}
 
 <header class="hero">
   <picture>
-    <source media="(min-width: 769px)" srcset="/img/hero-desktop.jpg">
-    <img width="1170" height="1554" src="/img/hero-mobile.jpg" alt="Vast white chalk field in Egypt's White Desert, sculpted by wind into otherworldly formations" fetchpriority="high">
+    <source media="(min-width: 769px)" srcset="/img/hero-desktop.webp">
+    <img width="1170" height="1554" src="/img/hero-mobile.webp" alt="Vast white chalk field in Egypt's White Desert, sculpted by wind into otherworldly formations" fetchpriority="high">
   </picture>
   <div class="hero-inner wrap">
     <div class="badge">Temporada octubre a abril · Grupos pequeños · Desde El Cairo</div>
@@ -238,7 +249,7 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="eyebrow reveal">El viaje</div>
     <h2 class="reveal">Cuatro horas desde El Cairo,<br>otro planeta.</h2>
     <p class="lede reveal">La carretera al sur de El Cairo cruza colinas volcánicas negras, un manantial frío escondido entre las dunas y las rocas doradas del valle de Agabat, antes de que el mundo se vuelva blanco.</p>
-    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.jpg" alt="Montaña volcánica negra sobre la arena dorada del Desierto Negro" loading="lazy"></div><div class="pad"><h3>El Desierto Negro</h3><p>Colinas volcánicas cubiertas de basalto negro, formadas hace unos 180 millones de años.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.jpg" alt="Huésped saltando a un manantial frío cerca del oasis de Bahariya" loading="lazy"></div><div class="pad"><h3>Un baño en el manantial frío</h3><p>Un manantial natural escondido entre las dunas, la piscina del desierto.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.jpg" alt="Extensiones de yeso blanco y olas de arena en el Desierto Blanco" loading="lazy"></div><div class="pad"><h3>El valle de Agabat</h3><p>Dunas doradas contra rocas de caliza blanca. La mayoría de los visitantes pasa deprisa. Nosotros no.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.jpg" alt="La famosa formación del Champiñón y la Gallina en el Desierto Blanco" loading="lazy"></div><div class="pad"><h3>El Desierto Blanco</h3><p>Champiñones y monolitos de yeso esculpidos por milenios de viento.</p></div></div></div>
+    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.webp" alt="Montaña volcánica negra sobre la arena dorada del Desierto Negro" loading="lazy"></div><div class="pad"><h3>El Desierto Negro</h3><p>Colinas volcánicas cubiertas de basalto negro, formadas hace unos 180 millones de años.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.webp" alt="Huésped saltando a un manantial frío cerca del oasis de Bahariya" loading="lazy"></div><div class="pad"><h3>Un baño en el manantial frío</h3><p>Un manantial natural escondido entre las dunas, la piscina del desierto.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.webp" alt="Extensiones de yeso blanco y olas de arena en el Desierto Blanco" loading="lazy"></div><div class="pad"><h3>El valle de Agabat</h3><p>Dunas doradas contra rocas de caliza blanca. La mayoría de los visitantes pasa deprisa. Nosotros no.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.webp" alt="La famosa formación del Champiñón y la Gallina en el Desierto Blanco" loading="lazy"></div><div class="pad"><h3>El Desierto Blanco</h3><p>Champiñones y monolitos de yeso esculpidos por milenios de viento.</p></div></div></div>
   </div>
 </section>
 
@@ -246,9 +257,9 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="split">
       <div class="photos reveal">
-        <img width="1080" height="1350" src="/img/camp-sunrise.jpg" alt="Desert camp at sunrise with tent row, rugs and tables" loading="lazy">
-        <img width="959" height="960" src="/img/campfire-tents.jpg" alt="Campfire glowing in front of colorful dome tents at night" loading="lazy">
-        <img width="960" height="1280" src="/img/food-spread.jpg" alt="Overhead view of a Bedouin dinner spread with bread, dips, mango and salads" loading="lazy">
+        <img width="1080" height="1350" src="/img/camp-sunrise.webp" alt="Desert camp at sunrise with tent row, rugs and tables" loading="lazy">
+        <img width="959" height="960" src="/img/campfire-tents.webp" alt="Campfire glowing in front of colorful dome tents at night" loading="lazy">
+        <img width="960" height="1280" src="/img/food-spread.webp" alt="Overhead view of a Bedouin dinner spread with bread, dips, mango and salads" loading="lazy">
       </div>
       <div class="reveal">
         <div class="eyebrow">La noche</div>
@@ -264,7 +275,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="eyebrow reveal">Galería</div>
     <h2 class="reveal">Cada foto aquí es real.<br>Tomada en nuestras propias excursiones.</h2>
-    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.jpg" alt="Roca champiñón dorada bajo un cielo azul" loading="lazy"><figcaption>Hora dorada en el Champiñón</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.jpg" alt="El Champiñón y la Gallina en silueta al atardecer" loading="lazy"><figcaption>Silueta al atardecer</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.jpg" alt="El Champiñón y la Gallina en la luz dorada de la tarde" loading="lazy"><figcaption>Luz de la tarde</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.jpg" alt="Hervidor sobre un fuego de campamento de noche" loading="lazy"><figcaption>Té al fuego</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.jpg" alt="Dos huéspedes junto a una formación gigante" loading="lazy"><figcaption>Nuestros huéspedes en el Champiñón</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.jpg" alt="Tienda y pequeño fuego bajo un cielo naranja" loading="lazy"><figcaption>El campamento al atardecer</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.jpg" alt="Pareja de pie en un arco natural de yeso" loading="lazy"><figcaption>El arco de yeso</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.jpg" alt="Tres huéspedes posando con un Land Cruiser" loading="lazy"><figcaption>Nuestro equipo 4x4</figcaption></figure><figure class="gal reveal" class="wide"><img width="1156" height="520" src="/img/guest-smiling.jpg" alt="Huésped sonriendo sobre un promontorio de yeso" loading="lazy"><figcaption>En el techo del mundo</figcaption></figure><figure class="gal reveal" class="wide"><img width="715" height="536" src="/img/guests-women.jpg" alt="Tres huéspedes sentadas sobre una roca de yeso" loading="lazy"><figcaption>Nuestros huéspedes desde Europa</figcaption></figure></div>
+    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.webp" alt="Roca champiñón dorada bajo un cielo azul" loading="lazy"><figcaption>Hora dorada en el Champiñón</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.webp" alt="El Champiñón y la Gallina en silueta al atardecer" loading="lazy"><figcaption>Silueta al atardecer</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.webp" alt="El Champiñón y la Gallina en la luz dorada de la tarde" loading="lazy"><figcaption>Luz de la tarde</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.webp" alt="Hervidor sobre un fuego de campamento de noche" loading="lazy"><figcaption>Té al fuego</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.webp" alt="Dos huéspedes junto a una formación gigante" loading="lazy"><figcaption>Nuestros huéspedes en el Champiñón</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.webp" alt="Tienda y pequeño fuego bajo un cielo naranja" loading="lazy"><figcaption>El campamento al atardecer</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.webp" alt="Pareja de pie en un arco natural de yeso" loading="lazy"><figcaption>El arco de yeso</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.webp" alt="Tres huéspedes posando con un Land Cruiser" loading="lazy"><figcaption>Nuestro equipo 4x4</figcaption></figure><figure class="gal reveal" class="wide"><img width="1156" height="520" src="/img/guest-smiling.webp" alt="Huésped sonriendo sobre un promontorio de yeso" loading="lazy"><figcaption>En el techo del mundo</figcaption></figure><figure class="gal reveal" class="wide"><img width="715" height="536" src="/img/guests-women.webp" alt="Tres huéspedes sentadas sobre una roca de yeso" loading="lazy"><figcaption>Nuestros huéspedes desde Europa</figcaption></figure></div>
   </div>
 </section>
 
@@ -320,9 +331,9 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="split">
       <div class="reveal"><h3 style="margin-top:1.4rem">Vuelo a El Cairo (CAI)</h3><p class="lede">Los vuelos directos desde la mayoría de las capitales europeas duran de 3,5 a 5 horas. Aterriza en El Cairo, duerme una noche en la ciudad y te recogemos a la mañana siguiente a las 7:00 en tu hotel. Al día siguiente estás de vuelta por la tarde.</p><h3 style="margin-top:1.4rem">Visado</h3><p class="lede">La mayoría de los pasaportes europeos obtienen el visado a la llegada al aeropuerto de El Cairo (unos 25 $) o un e-visa online por adelantado. Comprueba las reglas para tu nacionalidad antes de volar.</p><h3 style="margin-top:1.4rem">Mejor época</h3><p class="lede">De octubre a abril es temporada: 20-25 °C de sol mientras Europa pasa frío. De diciembre a febrero es temporada alta, reserva pronto.</p><h3 style="margin-top:1.4rem">Qué llevar</h3><p class="lede">Una capa abrigada para la noche del desierto, protector solar, gafas de sol y una cámara. Todo lo demás lo ponemos nosotros: tiendas, colchones, mantas, comida y bebida.</p></div>
       <div class="photos reveal">
-        <img width="1200" height="1593" src="/img/campfire-night.jpg" alt="Kettle on the campfire at night in the White Desert camp" loading="lazy">
-        <img width="960" height="1280" src="/img/guest-selfie.jpg" alt="Guest taking a selfie at sunset in the White Desert" loading="lazy">
-        <img width="960" height="1280" src="/img/black-desert.jpg" alt="Black Desert volcanic mountain over golden sand, on the road from Cairo" loading="lazy">
+        <img width="1200" height="1593" src="/img/campfire-night.webp" alt="Kettle on the campfire at night in the White Desert camp" loading="lazy">
+        <img width="960" height="1280" src="/img/guest-selfie.webp" alt="Guest taking a selfie at sunset in the White Desert" loading="lazy">
+        <img width="960" height="1280" src="/img/black-desert.webp" alt="Black Desert volcanic mountain over golden sand, on the road from Cairo" loading="lazy">
       </div>
     </div>
   </div>
@@ -332,7 +343,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap reveal">
     <div class="eyebrow">Preguntas</div>
     <h2>Antes de que preguntes.</h2>
-    <details><summary>¿Dónde está el Desierto Blanco?</summary><p>El Desierto Blanco (Sahara el Beyda) es una reserva protegida cerca del oasis de Farafra, a unos 370 km al suroeste de El Cairo. Nuestra ruta incluye también el oasis de Bahariya, el Desierto Negro y el valle de Agabat.</p></details><details><summary>¿Cuándo es la mejor época?</summary><p>De octubre a abril: días suaves y soleados de unos 20-25 °C y noches frescas y despejadas. La escapada perfecta al sol de invierno desde Europa. Los tours de verano también se hacen, pero los días son calurosos.</p></details><details><summary>¿Qué incluye el precio?</summary><p>Equipo de campamento, transporte 4x4 desde El Cairo y vuelta, todas las comidas, bebidas, tu guía beduino y las entradas de la reserva. Escríbenos por WhatsApp para el precio y las fechas actuales.</p></details><details><summary>¿Cómo reservo?</summary><p>Escríbenos por WhatsApp al +20 127 822 0004. Te respondemos con el precio, las fechas libres y todo lo necesario. Hablas directamente con el equipo que hace el tour, sin intermediarios.</p></details><details><summary>¿Necesito experiencia en camping o safari?</summary><p>No. Nuestros guías beduinos se encargan de conducir, el campamento y la cocina. Trae ropa abrigada para la noche, protector solar y una cámara.</p></details><details><summary>¿Es apto para quien viaja solo y para mujeres?</summary><p>Sí. Los tours son en grupos pequeños, así que quien viaja solo forma parte de un grupo amable todo el camino. Muchos de nuestros huéspedes son mujeres que viajan solas desde Europa.</p></details>
+    <details><summary>¿Cuánto cuesta?</summary><p>Depende de tus fechas y del tamaño del grupo. Escríbenos por WhatsApp y te respondemos en minutos con el precio actual y las fechas disponibles. Sin compromiso.</p></details><details><summary>¿Dónde está el Desierto Blanco?</summary><p>El Desierto Blanco (Sahara el Beyda) es una reserva protegida cerca del oasis de Farafra, a unos 370 km al suroeste de El Cairo. Nuestra ruta incluye también el oasis de Bahariya, el Desierto Negro y el valle de Agabat.</p></details><details><summary>¿Cuándo es la mejor época?</summary><p>De octubre a abril: días suaves y soleados de unos 20-25 °C y noches frescas y despejadas. La escapada perfecta al sol de invierno desde Europa. Los tours de verano también se hacen, pero los días son calurosos.</p></details><details><summary>¿Qué incluye el precio?</summary><p>Equipo de campamento, transporte 4x4 desde El Cairo y vuelta, todas las comidas, bebidas, tu guía beduino y las entradas de la reserva. Escríbenos por WhatsApp para el precio y las fechas actuales.</p></details><details><summary>¿Cómo reservo?</summary><p>Escríbenos por WhatsApp al +20 127 822 0004. Te respondemos con el precio, las fechas libres y todo lo necesario. Hablas directamente con el equipo que hace el tour, sin intermediarios.</p></details><details><summary>¿Necesito experiencia en camping o safari?</summary><p>No. Nuestros guías beduinos se encargan de conducir, el campamento y la cocina. Trae ropa abrigada para la noche, protector solar y una cámara.</p></details><details><summary>¿Es apto para quien viaja solo y para mujeres?</summary><p>Sí. Los tours son en grupos pequeños, así que quien viaja solo forma parte de un grupo amable todo el camino. Muchos de nuestros huéspedes son mujeres que viajan solas desde Europa.</p></details>
   </div>
 </section>
 <section class="cta-band">

@@ -163,7 +163,7 @@ summary::after{content:"+";position:absolute;right:0;top:-2px;font-size:1.4rem;c
 details[open] summary::after{content:"\2212"}
 details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 /* CTA BAND */
-.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.jpg') center/cover;color:#fff;text-align:center;padding:88px 0}
+.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.webp') center/cover;color:#fff;text-align:center;padding:88px 0}
 .cta-band h2{color:#fff}
 .cta-band p{max-width:38em;margin:0 auto 26px;opacity:.93}
 /* REVIEWS */
@@ -175,7 +175,7 @@ details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 .quote p{font-size:.98rem;font-style:italic}
 .quote .who{margin-top:12px;font-size:.82rem;font-style:normal;color:var(--ink-soft);font-weight:600}
 /* SEASONAL BANNER */
-.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.jpg') center/cover;color:#fff;text-align:center;padding:64px 0}
+.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.webp') center/cover;color:#fff;text-align:center;padding:64px 0}
 .season h2{color:#fff}
 .season p{max-width:40em;margin:0 auto 24px;opacity:.93}
 .season .tag{display:inline-block;background:var(--accent);padding:.35em .9em;border-radius:999px;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
@@ -201,10 +201,21 @@ footer small{opacity:.6;font-size:.8rem}
 .sticky{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;display:flex;justify-content:center;pointer-events:none}
 .sticky .btn{pointer-events:auto;width:100%;max-width:420px;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 @media(min-width:821px){.sticky{left:auto;right:24px;bottom:24px}.sticky .btn{width:auto}}
+
+.flash-offer{position:fixed;top:0;left:0;right:0;z-index:70;background:linear-gradient(90deg,#92400e,#b45309);color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:8px 12px;line-height:1.35}
+.flash-offer a{color:#fff;text-decoration:none}
+.flash-offer a:hover{text-decoration:underline}
+.nav{top:36px}
+@media(max-width:759px){
+.nav-in{flex-wrap:wrap;gap:8px;padding:10px 14px}
+.nav-right{margin-left:auto;gap:10px}
+.nav .langs{order:3;width:100%;overflow-x:auto;scrollbar-width:none;padding-top:2px}
+.nav .langs::-webkit-scrollbar{display:none}
+}
 </style>
 <link rel="stylesheet" href="/site.css">
 </head>
-<body>
+<body><div class="flash-offer"><a href="https://wa.me/201278220004?text=Hi%21%20I%27d%20like%20to%20claim%20the%20December%20offer%20FLASH15." rel="noopener">12月オファー: 15%オフ · コード FLASH15 · 先着5件 · WhatsAppで申し込む →</a></div>
 <nav class="nav"><div class="nav-in">
 <a class="brand" href="/ja/">Explore White Desert</a>
 <div class="nav-links"><a href="/ja/#journey">旅の流れ</a><a href="/ja/#camp">砂漠の夜</a><a href="/ja/hakusabaku-safari-2nichi/">ツアー行程</a><a href="/ja/#faq">FAQ</a></div>
@@ -213,8 +224,8 @@ footer small{opacity:.6;font-size:.8rem}
 
 <header class="hero">
   <picture>
-    <source media="(min-width: 769px)" srcset="/img/hero-desktop.jpg">
-    <img width="1170" height="1554" src="/img/hero-mobile.jpg" alt="風が削り出した白亜の大地が広がる、エジプト白砂漠の絶景" fetchpriority="high">
+    <source media="(min-width: 769px)" srcset="/img/hero-desktop.webp">
+    <img width="1170" height="1554" src="/img/hero-mobile.webp" alt="風が削り出した白亜の大地が広がる、エジプト白砂漠の絶景" fetchpriority="high">
   </picture>
   <div class="hero-inner wrap">
     <div class="badge">10月〜4月がシーズン · 少人数制 · カイロ発</div>
@@ -239,7 +250,7 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="eyebrow reveal">旅の流れ</div>
     <h2 class="reveal">カイロから車で4時間、<br>そこはもう別の惑星。</h2>
     <p class="lede reveal">カイロから南へ。黒い火山の丘、砂丘に隠れた冷たい泉、アガバット渓谷の黄金色の崖を越えると、世界が真っ白に変わります。</p>
-    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.jpg" alt="黒砂漠" loading="lazy"></div><div class="pad"><h3>黒砂漠</h3><p>約1億8000万年前に形成された、黒い玄武岩に覆われた火山の丘。</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.jpg" alt="冷たい泉で泳ぐ" loading="lazy"></div><div class="pad"><h3>冷たい泉で泳ぐ</h3><p>砂丘の中に隠れた天然の泉。砂漠のプライベートプールです。</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.jpg" alt="アガバット渓谷" loading="lazy"></div><div class="pad"><h3>アガバット渓谷</h3><p>黄金色の砂丘と白い石灰岩の崖。多くの旅行者が素通りする場所を、私たちはゆっくり味わいます。</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.jpg" alt="白砂漠" loading="lazy"></div><div class="pad"><h3>白砂漠</h3><p>何千年もの風が削り出した、白亜のキノコ岩とモノリス。</p></div></div></div>
+    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.webp" alt="黒砂漠" loading="lazy"></div><div class="pad"><h3>黒砂漠</h3><p>約1億8000万年前に形成された、黒い玄武岩に覆われた火山の丘。</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.webp" alt="冷たい泉で泳ぐ" loading="lazy"></div><div class="pad"><h3>冷たい泉で泳ぐ</h3><p>砂丘の中に隠れた天然の泉。砂漠のプライベートプールです。</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.webp" alt="アガバット渓谷" loading="lazy"></div><div class="pad"><h3>アガバット渓谷</h3><p>黄金色の砂丘と白い石灰岩の崖。多くの旅行者が素通りする場所を、私たちはゆっくり味わいます。</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.webp" alt="白砂漠" loading="lazy"></div><div class="pad"><h3>白砂漠</h3><p>何千年もの風が削り出した、白亜のキノコ岩とモノリス。</p></div></div></div>
   </div>
 </section>
 
@@ -247,9 +258,9 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="split">
       <div class="photos reveal">
-        <img width="1080" height="1350" src="/img/camp-sunrise.jpg" alt="日の出のキャンプ。テントの列、ラグ、テーブル" loading="lazy">
-        <img width="959" height="960" src="/img/campfire-tents.jpg" alt="夜、カラフルなドームテントの前で燃える焚き火" loading="lazy">
-        <img width="960" height="1280" src="/img/food-spread.jpg" alt="パン、ディップ、マンゴー、サラダが並ぶベドウィン料理" loading="lazy">
+        <img width="1080" height="1350" src="/img/camp-sunrise.webp" alt="日の出のキャンプ。テントの列、ラグ、テーブル" loading="lazy">
+        <img width="959" height="960" src="/img/campfire-tents.webp" alt="夜、カラフルなドームテントの前で燃える焚き火" loading="lazy">
+        <img width="960" height="1280" src="/img/food-spread.webp" alt="パン、ディップ、マンゴー、サラダが並ぶベドウィン料理" loading="lazy">
       </div>
       <div class="reveal">
         <div class="eyebrow">砂漠の夜</div>
@@ -265,7 +276,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="eyebrow reveal">ギャラリー</div>
     <h2 class="reveal">ここにある写真はすべて本物。<br>私たち自身のツアーで撮影しました。</h2>
-    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.jpg" alt="マッシュルームロックのゴールデンアワー" loading="lazy"><figcaption>マッシュルームロックのゴールデンアワー</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.jpg" alt="夕日のシルエット" loading="lazy"><figcaption>夕日のシルエット</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.jpg" alt="夕方の光" loading="lazy"><figcaption>夕方の光</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.jpg" alt="焚き火で沸かすお茶" loading="lazy"><figcaption>焚き火で沸かすお茶</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.jpg" alt="マッシュルームロックでのゲスト" loading="lazy"><figcaption>マッシュルームロックでのゲスト</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.jpg" alt="夕暮れのキャンプ" loading="lazy"><figcaption>夕暮れのキャンプ</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.jpg" alt="白亜の天然アーチ" loading="lazy"><figcaption>白亜の天然アーチ</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.jpg" alt="私たちの4WDクルー" loading="lazy"><figcaption>私たちの4WDクルー</figcaption></figure><figure class="gal reveal"><img width="1156" height="520" src="/img/guest-smiling.jpg" alt="頂上からの眺め" loading="lazy"><figcaption>頂上からの眺め</figcaption></figure><figure class="gal reveal"><img width="715" height="536" src="/img/guests-women.jpg" alt="ヨーロッパからのゲスト" loading="lazy"><figcaption>ヨーロッパからのゲスト</figcaption></figure></div>
+    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.webp" alt="マッシュルームロックのゴールデンアワー" loading="lazy"><figcaption>マッシュルームロックのゴールデンアワー</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.webp" alt="夕日のシルエット" loading="lazy"><figcaption>夕日のシルエット</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.webp" alt="夕方の光" loading="lazy"><figcaption>夕方の光</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.webp" alt="焚き火で沸かすお茶" loading="lazy"><figcaption>焚き火で沸かすお茶</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.webp" alt="マッシュルームロックでのゲスト" loading="lazy"><figcaption>マッシュルームロックでのゲスト</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.webp" alt="夕暮れのキャンプ" loading="lazy"><figcaption>夕暮れのキャンプ</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.webp" alt="白亜の天然アーチ" loading="lazy"><figcaption>白亜の天然アーチ</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.webp" alt="私たちの4WDクルー" loading="lazy"><figcaption>私たちの4WDクルー</figcaption></figure><figure class="gal reveal"><img width="1156" height="520" src="/img/guest-smiling.webp" alt="頂上からの眺め" loading="lazy"><figcaption>頂上からの眺め</figcaption></figure><figure class="gal reveal"><img width="715" height="536" src="/img/guests-women.webp" alt="ヨーロッパからのゲスト" loading="lazy"><figcaption>ヨーロッパからのゲスト</figcaption></figure></div>
   </div>
 </section>
 
@@ -312,9 +323,9 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="split">
       <div class="reveal"><h3 style="margin-top:1.4rem">カイロ（CAI）へ飛ぶ</h3><p class="lede">日本からカイロへは、直行便または乗り継ぎ便をご利用ください。カイロに到着したらまず市内で1泊し、翌朝7:00にホテルまでお迎えに上がります。翌日の夕方にはホテルへお戻りいただけます。</p><h3 style="margin-top:1.4rem">ビザ</h3><p class="lede">多くの国籍の方はカイロ空港で到着ビザ（約25米ドル）を取得するか、事前にオンラインでeビザを申請できます。ご出発前に、ご自身の国籍の最新の条件をご確認ください。</p><h3 style="margin-top:1.4rem">ベストシーズン</h3><p class="lede">10月から4月がシーズンです。日中は20〜25℃の快晴で、日本の冬から逃れる旅にぴったり。12月から2月は最盛期なので、早めのご予約を。</p><h3 style="margin-top:1.4rem">持ち物</h3><p class="lede">砂漠の夜用の暖かい上着、日焼け止め、サングラス、カメラ。テント、マットレス、毛布、食事、飲み物はすべてこちらで用意します。</p></div>
       <div class="photos reveal">
-        <img width="1200" height="1593" src="/img/campfire-night.jpg" alt="夜の白砂漠のキャンプで焚き火にかけられたケトル" loading="lazy">
-        <img width="960" height="1280" src="/img/guest-selfie.jpg" alt="白砂漠の夕日の中で自撮りするゲスト" loading="lazy">
-        <img width="960" height="1280" src="/img/black-desert.jpg" alt="カイロからの道中に見える、黄金色の砂の上にそびえる黒砂漠の火山" loading="lazy">
+        <img width="1200" height="1593" src="/img/campfire-night.webp" alt="夜の白砂漠のキャンプで焚き火にかけられたケトル" loading="lazy">
+        <img width="960" height="1280" src="/img/guest-selfie.webp" alt="白砂漠の夕日の中で自撮りするゲスト" loading="lazy">
+        <img width="960" height="1280" src="/img/black-desert.webp" alt="カイロからの道中に見える、黄金色の砂の上にそびえる黒砂漠の火山" loading="lazy">
       </div>
     </div>
   </div>
@@ -324,7 +335,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap reveal">
     <div class="eyebrow">よくある質問</div>
     <h2>ご質問にお答えします。</h2>
-    <details><summary>白砂漠はどこにありますか？</summary><p>白砂漠（サハラ・エル・ベイダ）は、カイロの南西約370km、ファラフラ・オアシス近くにある保護区です。ツアーでは、バハレイヤ・オアシス、黒砂漠、アガバット渓谷も巡ります。</p></details><details><summary>訪れるのに一番よい時期はいつですか？</summary><p>10月から4月です。日中は20〜25℃の穏やかな晴天、夜は涼しく澄んでいます。冬の太陽を求める旅にぴったりです。夏も催行しますが、日中は暑くなります。</p></details><details><summary>料金には何が含まれますか？</summary><p>キャンプ用品、カイロ発着の4WD送迎、全食事、飲み物、ベドウィンのガイド、保護区の入場券が含まれます。最新の料金と日程はWhatsAppでお問い合わせください。</p></details><details><summary>予約するにはどうすればいいですか？</summary><p>WhatsApp +20 127 822 0004 にメッセージをください。料金、空き日程、必要な情報をお送りします。ツアーを運営するチームと直接やり取りでき、仲介業者はいません。</p></details><details><summary>キャンプやサファリの経験は必要ですか？</summary><p>必要ありません。運転、キャンプの設営、調理はベドウィンのガイドがすべて行います。夜用の暖かい上着、日焼け止め、カメラをお持ちください。</p></details><details><summary>一人旅や女性の旅行者でも安心ですか？</summary><p>はい。ツアーは少人数制なので、一人参加の方も最初から最後まで和やかなグループの一員として過ごせます。ヨーロッパからの女性一人旅のゲストも多くいらっしゃいます。</p></details>
+    <details><summary>料金はいくらですか？</summary><p>日程と人数によって変わります。WhatsAppでお問い合わせいただければ、数分以内に最新の料金と空き日程をご案内します。お気軽にどうぞ。</p></details><details><summary>白砂漠はどこにありますか？</summary><p>白砂漠（サハラ・エル・ベイダ）は、カイロの南西約370km、ファラフラ・オアシス近くにある保護区です。ツアーでは、バハレイヤ・オアシス、黒砂漠、アガバット渓谷も巡ります。</p></details><details><summary>訪れるのに一番よい時期はいつですか？</summary><p>10月から4月です。日中は20〜25℃の穏やかな晴天、夜は涼しく澄んでいます。冬の太陽を求める旅にぴったりです。夏も催行しますが、日中は暑くなります。</p></details><details><summary>料金には何が含まれますか？</summary><p>キャンプ用品、カイロ発着の4WD送迎、全食事、飲み物、ベドウィンのガイド、保護区の入場券が含まれます。最新の料金と日程はWhatsAppでお問い合わせください。</p></details><details><summary>予約するにはどうすればいいですか？</summary><p>WhatsApp +20 127 822 0004 にメッセージをください。料金、空き日程、必要な情報をお送りします。ツアーを運営するチームと直接やり取りでき、仲介業者はいません。</p></details><details><summary>キャンプやサファリの経験は必要ですか？</summary><p>必要ありません。運転、キャンプの設営、調理はベドウィンのガイドがすべて行います。夜用の暖かい上着、日焼け止め、カメラをお持ちください。</p></details><details><summary>一人旅や女性の旅行者でも安心ですか？</summary><p>はい。ツアーは少人数制なので、一人参加の方も最初から最後まで和やかなグループの一員として過ごせます。ヨーロッパからの女性一人旅のゲストも多くいらっしゃいます。</p></details>
   </div>
 </section>
 <section class="cta-band">

@@ -163,7 +163,7 @@ summary::after{content:"+";position:absolute;right:0;top:-2px;font-size:1.4rem;c
 details[open] summary::after{content:"\2212"}
 details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 /* CTA BAND */
-.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.jpg') center/cover;color:#fff;text-align:center;padding:88px 0}
+.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.webp') center/cover;color:#fff;text-align:center;padding:88px 0}
 .cta-band h2{color:#fff}
 .cta-band p{max-width:38em;margin:0 auto 26px;opacity:.93}
 /* REVIEWS */
@@ -175,7 +175,7 @@ details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 .quote p{font-size:.98rem;font-style:italic}
 .quote .who{margin-top:12px;font-size:.82rem;font-style:normal;color:var(--ink-soft);font-weight:600}
 /* SEASONAL BANNER */
-.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.jpg') center/cover;color:#fff;text-align:center;padding:64px 0}
+.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.webp') center/cover;color:#fff;text-align:center;padding:64px 0}
 .season h2{color:#fff}
 .season p{max-width:40em;margin:0 auto 24px;opacity:.93}
 .season .tag{display:inline-block;background:var(--accent);padding:.35em .9em;border-radius:999px;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
@@ -201,10 +201,21 @@ footer small{opacity:.6;font-size:.8rem}
 .sticky{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;display:flex;justify-content:center;pointer-events:none}
 .sticky .btn{pointer-events:auto;width:100%;max-width:420px;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 @media(min-width:821px){.sticky{left:auto;right:24px;bottom:24px}.sticky .btn{width:auto}}
+
+.flash-offer{position:fixed;top:0;left:0;right:0;z-index:70;background:linear-gradient(90deg,#92400e,#b45309);color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:8px 12px;line-height:1.35}
+.flash-offer a{color:#fff;text-decoration:none}
+.flash-offer a:hover{text-decoration:underline}
+.nav{top:36px}
+@media(max-width:759px){
+.nav-in{flex-wrap:wrap;gap:8px;padding:10px 14px}
+.nav-right{margin-left:auto;gap:10px}
+.nav .langs{order:3;width:100%;overflow-x:auto;scrollbar-width:none;padding-top:2px}
+.nav .langs::-webkit-scrollbar{display:none}
+}
 </style>
 <link rel="stylesheet" href="/site.css">
 </head>
-<body>
+<body><div class="flash-offer"><a href="https://wa.me/201278220004?text=Hi%21%20I%27d%20like%20to%20claim%20the%20December%20offer%20FLASH15." rel="noopener">Oferta de dezembro: 15% desc. · código FLASH15 · primeiras 5 reservas · peça no WhatsApp →</a></div>
 <nav class="nav"><div class="nav-in">
 <a class="brand" href="/pt/">Explore White Desert</a>
 <div class="nav-links"><a href="/pt/#journey">A viagem</a><a href="/pt/#camp">A noite</a><a href="/pt/safari-deserto-branco-2-dias/">Programa</a><a href="/pt/#faq">FAQ</a></div>
@@ -213,8 +224,8 @@ footer small{opacity:.6;font-size:.8rem}
 
 <header class="hero">
   <picture>
-    <source media="(min-width: 769px)" srcset="/img/hero-desktop.jpg">
-    <img width="1170" height="1554" src="/img/hero-mobile.jpg" alt="Vasto campo de giz branco no Deserto Branco do Egito, esculpido pelo vento em formações de outro mundo" fetchpriority="high">
+    <source media="(min-width: 769px)" srcset="/img/hero-desktop.webp">
+    <img width="1170" height="1554" src="/img/hero-mobile.webp" alt="Vasto campo de giz branco no Deserto Branco do Egito, esculpido pelo vento em formações de outro mundo" fetchpriority="high">
   </picture>
   <div class="hero-inner wrap">
     <div class="badge">Época de outubro a abril · Grupos pequenos · A partir do Cairo</div>
@@ -239,7 +250,7 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="eyebrow reveal">A viagem</div>
     <h2 class="reveal">Quatro horas do Cairo,<br>outro planeta.</h2>
     <p class="lede reveal">A estrada para sul, a partir do Cairo, atravessa colinas vulcânicas negras, uma nascente fria escondida nas dunas e as falésias douradas do Vale de Agabat, até o mundo se tornar branco.</p>
-    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.jpg" alt="O Deserto Negro" loading="lazy"></div><div class="pad"><h3>O Deserto Negro</h3><p>Colinas vulcânicas cobertas de basalto negro, formadas há cerca de 180 milhões de anos.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.jpg" alt="Um mergulho na nascente fria" loading="lazy"></div><div class="pad"><h3>Um mergulho na nascente fria</h3><p>Uma nascente natural escondida nas dunas, a piscina do próprio deserto.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.jpg" alt="Vale de Agabat" loading="lazy"></div><div class="pad"><h3>Vale de Agabat</h3><p>Dunas douradas encostadas a falésias de calcário branco. A maioria passa a correr. Nós não.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.jpg" alt="O Deserto Branco" loading="lazy"></div><div class="pad"><h3>O Deserto Branco</h3><p>Cogumelos e monólitos de giz esculpidos por milhares de anos de vento.</p></div></div></div>
+    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.webp" alt="O Deserto Negro" loading="lazy"></div><div class="pad"><h3>O Deserto Negro</h3><p>Colinas vulcânicas cobertas de basalto negro, formadas há cerca de 180 milhões de anos.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.webp" alt="Um mergulho na nascente fria" loading="lazy"></div><div class="pad"><h3>Um mergulho na nascente fria</h3><p>Uma nascente natural escondida nas dunas, a piscina do próprio deserto.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.webp" alt="Vale de Agabat" loading="lazy"></div><div class="pad"><h3>Vale de Agabat</h3><p>Dunas douradas encostadas a falésias de calcário branco. A maioria passa a correr. Nós não.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.webp" alt="O Deserto Branco" loading="lazy"></div><div class="pad"><h3>O Deserto Branco</h3><p>Cogumelos e monólitos de giz esculpidos por milhares de anos de vento.</p></div></div></div>
   </div>
 </section>
 
@@ -247,9 +258,9 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="split">
       <div class="photos reveal">
-        <img width="1080" height="1350" src="/img/camp-sunrise.jpg" alt="Acampamento no deserto ao nascer do sol, com fila de tendas, tapetes e mesas" loading="lazy">
-        <img width="959" height="960" src="/img/campfire-tents.jpg" alt="Fogueira acesa diante de tendas de cúpula coloridas à noite" loading="lazy">
-        <img width="960" height="1280" src="/img/food-spread.jpg" alt="Mesa de jantar beduíno com pão, molhos, manga e saladas" loading="lazy">
+        <img width="1080" height="1350" src="/img/camp-sunrise.webp" alt="Acampamento no deserto ao nascer do sol, com fila de tendas, tapetes e mesas" loading="lazy">
+        <img width="959" height="960" src="/img/campfire-tents.webp" alt="Fogueira acesa diante de tendas de cúpula coloridas à noite" loading="lazy">
+        <img width="960" height="1280" src="/img/food-spread.webp" alt="Mesa de jantar beduíno com pão, molhos, manga e saladas" loading="lazy">
       </div>
       <div class="reveal">
         <div class="eyebrow">A noite</div>
@@ -265,7 +276,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="eyebrow reveal">Galeria</div>
     <h2 class="reveal">Todas as fotos são reais.<br>Tiradas nas nossas próprias viagens.</h2>
-    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.jpg" alt="Hora dourada na Rocha Cogumelo" loading="lazy"><figcaption>Hora dourada na Rocha Cogumelo</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.jpg" alt="Silhueta ao pôr do sol" loading="lazy"><figcaption>Silhueta ao pôr do sol</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.jpg" alt="Luz da tarde" loading="lazy"><figcaption>Luz da tarde</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.jpg" alt="Chá na fogueira" loading="lazy"><figcaption>Chá na fogueira</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.jpg" alt="Hóspedes na Rocha Cogumelo" loading="lazy"><figcaption>Hóspedes na Rocha Cogumelo</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.jpg" alt="O acampamento ao pôr do sol" loading="lazy"><figcaption>O acampamento ao pôr do sol</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.jpg" alt="O arco de giz" loading="lazy"><figcaption>O arco de giz</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.jpg" alt="A nossa equipa de 4x4" loading="lazy"><figcaption>A nossa equipa de 4x4</figcaption></figure><figure class="gal reveal"><img width="1156" height="520" src="/img/guest-smiling.jpg" alt="No topo do mundo" loading="lazy"><figcaption>No topo do mundo</figcaption></figure><figure class="gal reveal"><img width="715" height="536" src="/img/guests-women.jpg" alt="Hóspedes vindos da Europa" loading="lazy"><figcaption>Hóspedes vindos da Europa</figcaption></figure></div>
+    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.webp" alt="Hora dourada na Rocha Cogumelo" loading="lazy"><figcaption>Hora dourada na Rocha Cogumelo</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.webp" alt="Silhueta ao pôr do sol" loading="lazy"><figcaption>Silhueta ao pôr do sol</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.webp" alt="Luz da tarde" loading="lazy"><figcaption>Luz da tarde</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.webp" alt="Chá na fogueira" loading="lazy"><figcaption>Chá na fogueira</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.webp" alt="Hóspedes na Rocha Cogumelo" loading="lazy"><figcaption>Hóspedes na Rocha Cogumelo</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.webp" alt="O acampamento ao pôr do sol" loading="lazy"><figcaption>O acampamento ao pôr do sol</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.webp" alt="O arco de giz" loading="lazy"><figcaption>O arco de giz</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.webp" alt="A nossa equipa de 4x4" loading="lazy"><figcaption>A nossa equipa de 4x4</figcaption></figure><figure class="gal reveal"><img width="1156" height="520" src="/img/guest-smiling.webp" alt="No topo do mundo" loading="lazy"><figcaption>No topo do mundo</figcaption></figure><figure class="gal reveal"><img width="715" height="536" src="/img/guests-women.webp" alt="Hóspedes vindos da Europa" loading="lazy"><figcaption>Hóspedes vindos da Europa</figcaption></figure></div>
   </div>
 </section>
 
@@ -312,9 +323,9 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="split">
       <div class="reveal"><h3 style="margin-top:1.4rem">Voe para o Cairo (CAI)</h3><p class="lede">Consulte os voos diretos ou com escala disponíveis a partir de Lisboa, do Porto ou do Brasil. Aterre no Cairo, durma uma noite na cidade e vamos buscá-lo ao hotel às 7:00 da manhã seguinte. Na tarde do dia seguinte está de volta ao hotel.</p><h3 style="margin-top:1.4rem">Visto</h3><p class="lede">Muitos viajantes obtêm o visto egípcio à chegada, no aeroporto do Cairo (cerca de 25 dólares), ou pedem o visto eletrónico (e-Visa) antecipadamente. Confirme as regras para a sua nacionalidade antes de voar.</p><h3 style="margin-top:1.4rem">Quando vir</h3><p class="lede">De outubro a abril é a época: dias de sol com 20-25°C enquanto na Europa faz frio. De dezembro a fevereiro é a época alta, reserve com antecedência.</p><h3 style="margin-top:1.4rem">O que levar</h3><p class="lede">Uma camada quente para a noite no deserto, protetor solar, óculos de sol e uma câmara. Nós fornecemos tudo o resto: tendas, colchões, cobertores, comida e bebidas.</p></div>
       <div class="photos reveal">
-        <img width="1200" height="1593" src="/img/campfire-night.jpg" alt="Chaleira na fogueira à noite no acampamento do Deserto Branco" loading="lazy">
-        <img width="960" height="1280" src="/img/guest-selfie.jpg" alt="Hóspede a tirar uma selfie ao pôr do sol no Deserto Branco" loading="lazy">
-        <img width="960" height="1280" src="/img/black-desert.jpg" alt="Montanha vulcânica do Deserto Negro sobre areia dourada, no caminho a partir do Cairo" loading="lazy">
+        <img width="1200" height="1593" src="/img/campfire-night.webp" alt="Chaleira na fogueira à noite no acampamento do Deserto Branco" loading="lazy">
+        <img width="960" height="1280" src="/img/guest-selfie.webp" alt="Hóspede a tirar uma selfie ao pôr do sol no Deserto Branco" loading="lazy">
+        <img width="960" height="1280" src="/img/black-desert.webp" alt="Montanha vulcânica do Deserto Negro sobre areia dourada, no caminho a partir do Cairo" loading="lazy">
       </div>
     </div>
   </div>
@@ -324,7 +335,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap reveal">
     <div class="eyebrow">Perguntas</div>
     <h2>Antes de perguntar.</h2>
-    <details><summary>Onde fica o Deserto Branco?</summary><p>O Deserto Branco (Sahara el Beyda) é uma reserva protegida perto do Oásis de Farafra, a cerca de 370 km a sudoeste do Cairo. O nosso percurso passa também pelo Oásis de Bahariya, pelo Deserto Negro e pelo Vale de Agabat.</p></details><details><summary>Qual é a melhor altura para visitar?</summary><p>De outubro a abril: dias amenos e de sol, com cerca de 20-25°C, e noites frescas e límpidas. É a fuga perfeita ao inverno europeu. No verão também fazemos viagens, mas os dias são quentes.</p></details><details><summary>O que está incluído no preço?</summary><p>Equipamento de acampamento, transporte em 4x4 a partir do Cairo e de volta, todas as refeições, bebidas, o seu guia beduíno e os bilhetes de entrada na reserva. Envie-nos uma mensagem pelo WhatsApp para saber o preço e as datas atuais.</p></details><details><summary>Como reservo?</summary><p>Envie-nos uma mensagem pelo WhatsApp: +20 127 822 0004. Respondemos com o preço, as datas livres e tudo o que precisa. Fala diretamente com a equipa que realiza a viagem, sem intermediários.</p></details><details><summary>Preciso de experiência de campismo ou safari?</summary><p>Nenhuma. Os nossos guias beduínos tratam da condução, do acampamento e da cozinha. Leve roupa quente para a noite, protetor solar e uma câmara.</p></details><details><summary>É adequado para quem viaja sozinho e para mulheres?</summary><p>Sim. As viagens são feitas em grupos pequenos, por isso quem viaja sozinho integra um grupo simpático do princípio ao fim. Muitas das nossas hóspedes são mulheres que viajam sozinhas desde a Europa.</p></details>
+    <details><summary>Quanto custa?</summary><p>Depende das suas datas e do tamanho do grupo. Mande mensagem no WhatsApp: respondemos em minutos com o preço atual e as datas disponíveis. Sem compromisso.</p></details><details><summary>Onde fica o Deserto Branco?</summary><p>O Deserto Branco (Sahara el Beyda) é uma reserva protegida perto do Oásis de Farafra, a cerca de 370 km a sudoeste do Cairo. O nosso percurso passa também pelo Oásis de Bahariya, pelo Deserto Negro e pelo Vale de Agabat.</p></details><details><summary>Qual é a melhor altura para visitar?</summary><p>De outubro a abril: dias amenos e de sol, com cerca de 20-25°C, e noites frescas e límpidas. É a fuga perfeita ao inverno europeu. No verão também fazemos viagens, mas os dias são quentes.</p></details><details><summary>O que está incluído no preço?</summary><p>Equipamento de acampamento, transporte em 4x4 a partir do Cairo e de volta, todas as refeições, bebidas, o seu guia beduíno e os bilhetes de entrada na reserva. Envie-nos uma mensagem pelo WhatsApp para saber o preço e as datas atuais.</p></details><details><summary>Como reservo?</summary><p>Envie-nos uma mensagem pelo WhatsApp: +20 127 822 0004. Respondemos com o preço, as datas livres e tudo o que precisa. Fala diretamente com a equipa que realiza a viagem, sem intermediários.</p></details><details><summary>Preciso de experiência de campismo ou safari?</summary><p>Nenhuma. Os nossos guias beduínos tratam da condução, do acampamento e da cozinha. Leve roupa quente para a noite, protetor solar e uma câmara.</p></details><details><summary>É adequado para quem viaja sozinho e para mulheres?</summary><p>Sim. As viagens são feitas em grupos pequenos, por isso quem viaja sozinho integra um grupo simpático do princípio ao fim. Muitas das nossas hóspedes são mulheres que viajam sozinhas desde a Europa.</p></details>
   </div>
 </section>
 <section class="cta-band">

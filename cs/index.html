@@ -162,7 +162,7 @@ summary::after{content:"+";position:absolute;right:0;top:-2px;font-size:1.4rem;c
 details[open] summary::after{content:"\2212"}
 details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 /* CTA BAND */
-.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.jpg') center/cover;color:#fff;text-align:center;padding:88px 0}
+.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.webp') center/cover;color:#fff;text-align:center;padding:88px 0}
 .cta-band h2{color:#fff}
 .cta-band p{max-width:38em;margin:0 auto 26px;opacity:.93}
 /* REVIEWS */
@@ -174,7 +174,7 @@ details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 .quote p{font-size:.98rem;font-style:italic}
 .quote .who{margin-top:12px;font-size:.82rem;font-style:normal;color:var(--ink-soft);font-weight:600}
 /* SEASONAL BANNER */
-.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.jpg') center/cover;color:#fff;text-align:center;padding:64px 0}
+.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.webp') center/cover;color:#fff;text-align:center;padding:64px 0}
 .season h2{color:#fff}
 .season p{max-width:40em;margin:0 auto 24px;opacity:.93}
 .season .tag{display:inline-block;background:var(--accent);padding:.35em .9em;border-radius:999px;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
@@ -200,6 +200,17 @@ footer small{opacity:.6;font-size:.8rem}
 .sticky{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;display:flex;justify-content:center;pointer-events:none}
 .sticky .btn{pointer-events:auto;width:100%;max-width:420px;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 @media(min-width:821px){.sticky{left:auto;right:24px;bottom:24px}.sticky .btn{width:auto}}
+
+.flash-offer{position:fixed;top:0;left:0;right:0;z-index:70;background:linear-gradient(90deg,#92400e,#b45309);color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:8px 12px;line-height:1.35}
+.flash-offer a{color:#fff;text-decoration:none}
+.flash-offer a:hover{text-decoration:underline}
+.nav{top:36px}
+@media(max-width:759px){
+.nav-in{flex-wrap:wrap;gap:8px;padding:10px 14px}
+.nav-right{margin-left:auto;gap:10px}
+.nav .langs{order:3;width:100%;overflow-x:auto;scrollbar-width:none;padding-top:2px}
+.nav .langs::-webkit-scrollbar{display:none}
+}
 </style>
 <script type="application/ld+json" id="geo-jsonld">
 {
@@ -342,7 +353,7 @@ footer small{opacity:.6;font-size:.8rem}
 <link rel="stylesheet" href="/site.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "TravelAgency", "@id": "https://explorewhitedesert.github.io/#business", "name": "Explore White Desert", "url": "https://explorewhitedesert.github.io/cs/", "description": "2 dny / 1 noc safari v Bílé poušti z Káhiry: 4x4 přes Černou poušť, údolí Agabat, křídové útvary, beduínský tábor pod hvězdami. All-inclusive. Rezervujte přes WhatsApp.", "telephone": "+201278220004", "areaServed": [{"@type": "Place", "name": "White Desert, Egypt"}, {"@type": "Place", "name": "Bahariya Oasis"}, {"@type": "Place", "name": "Farafra Oasis"}, {"@type": "Place", "name": "Black Desert, Egypt"}], "address": {"@type": "PostalAddress", "addressLocality": "Cairo", "addressCountry": "EG"}, "sameAs": ["https://www.instagram.com/explore_white_desert/", "https://www.facebook.com/WhiteDesertTours/", "https://www.tripadvisor.com/Attraction_Review-g303850-d32977405-Reviews-White_Desert_Adventure-Bawiti_Giza_Governorate.html"], "contactPoint": {"@type": "ContactPoint", "telephone": "+201278220004", "contactType": "reservations", "availableLanguage": ["en", "de", "fr", "it", "es", "ar"]}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "bestRating": "5", "reviewCount": "12", "ratingCount": "12"}}, {"@type": "FAQPage", "inLanguage": "cs", "mainEntity": [{"@type": "Question", "name": "Kde je Bílá poušť?", "acceptedAnswer": {"@type": "Answer", "text": "Bílá poušť (Sahara el Beyda) je chráněná rezervace u oázy Farafra, asi 370 km jihozápadně od Káhiry. Naše trasa zahrnuje také oázu Bahariya, Černou poušť a údolí Agabat."}}, {"@type": "Question", "name": "Kdy je nejlepší doba na návštěvu?", "acceptedAnswer": {"@type": "Answer", "text": "Říjen až duben: mírné slunečné dny kolem 20-25 °C a chladné, jasné noci. Ideální únik za zimním sluncem z Evropy. V létě výlety jezdí také, ale dny jsou horké."}}, {"@type": "Question", "name": "Co je zahrnuto v ceně?", "acceptedAnswer": {"@type": "Answer", "text": "Kempingové vybavení, doprava 4x4 z Káhiry a zpět, všechna jídla, nápoje, váš beduínský průvodce a vstupenky do rezervace. Napište nám na WhatsApp pro aktuální cenu a termíny."}}, {"@type": "Question", "name": "Jak rezervuji?", "acceptedAnswer": {"@type": "Answer", "text": "Napište nám na WhatsApp na +20 127 822 0004. Odpovíme s cenou, volnými termíny a vším, co potřebujete. Mluvíte přímo s týmem, který výlet vede, bez prostředníků."}}, {"@type": "Question", "name": "Potřebuji zkušenosti s kempem nebo safari?", "acceptedAnswer": {"@type": "Answer", "text": "Ne. Naši beduínští průvodci zajistí řízení, tábor i vaření. Vezměte si teplé vrstvy na noc, opalovací krém a fotoaparát."}}, {"@type": "Question", "name": "Je to vhodné pro sólo cestovatele a ženy?", "acceptedAnswer": {"@type": "Answer", "text": "Ano. Výlety jedou v malých skupinách, takže sólo cestovatelé jsou po celou dobu součástí přátelské skupiny. Mnoho našich hostů jsou ženy cestující samy z Evropy."}}]}]}</script>
 </head>
-<body>
+<body><div class="flash-offer"><a href="https://wa.me/201278220004?text=Hi%21%20I%27d%20like%20to%20claim%20the%20December%20offer%20FLASH15." rel="noopener">Nabídka na prosinec: sleva 15% · kód FLASH15 · prvních 5 rezervací · získejte na WhatsApp →</a></div>
 <nav class="nav"><div class="nav-in">
 <a class="brand" href="/">Explore White Desert</a>
 <div class="nav-links"><a href="/#journey">Cesta</a><a href="/#camp">Noc</a><a href="/white-desert-safari-2-days/">Program</a><a href="/blog/">Blog</a><a href="/#faq">FAQ</a></div>
@@ -351,8 +362,8 @@ footer small{opacity:.6;font-size:.8rem}
 
 <header class="hero">
   <picture>
-    <source media="(min-width: 769px)" srcset="/img/hero-desktop.jpg">
-    <img width="1170" height="1554" src="/img/hero-mobile.jpg" alt="Rozlehlé bílé křídové pole v egyptské Bílé poušti, větrem vymodelované do nezemských útvarů" fetchpriority="high">
+    <source media="(min-width: 769px)" srcset="/img/hero-desktop.webp">
+    <img width="1170" height="1554" src="/img/hero-mobile.webp" alt="Rozlehlé bílé křídové pole v egyptské Bílé poušti, větrem vymodelované do nezemských útvarů" fetchpriority="high">
   </picture>
   <div class="hero-inner wrap">
     <div class="badge">Sezóna říjen až duben · Malé skupiny · Z Káhiry</div>
@@ -376,7 +387,7 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="eyebrow reveal">Cesta</div>
     <h2 class="reveal">Čtyři hodiny od Káhiry,<br>jiná planeta.</h2>
     <p class="lede reveal">Silnice na jih od Káhiry kříží sopečné černé kopce, studený pramen ukrytý v dunách a zlaté útesy údolí Agabat, než se svět zbarví do bíla.</p>
-    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.jpg" alt="Černá sopečná hora zvedající se nad zlatým pískem v egyptské Černé poušti" loading="lazy"></div><div class="pad"><h3>Černá poušť</h3><p>Sopečné kopce posypané černým čedičem, vzniklé před asi 180 miliony let.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.jpg" alt="Host skáčící do studeného pouštního pramene u oázy Bahariya" loading="lazy"></div><div class="pad"><h3>Koupání ve studeném prameni</h3><p>Skrytý přírodní pramen v dunách, vlastní bazén pouště.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.jpg" alt="Bílé křídové skvrny a zvlněný písek po celé Bílé poušti" loading="lazy"></div><div class="pad"><h3>Údolí Agabat</h3><p>Zlaté duny přitisknuté k bílým vápencovým útesům. Většina návštěvníků projíždí kolem. My ne.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.jpg" alt="Slavný útvar Houbová a Kuřecí skála v Bílé poušti" loading="lazy"></div><div class="pad"><h3>Bílá poušť</h3><p>Křídové houby a monolity vytesané tisíci lety větru.</p></div></div></div>
+    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.webp" alt="Černá sopečná hora zvedající se nad zlatým pískem v egyptské Černé poušti" loading="lazy"></div><div class="pad"><h3>Černá poušť</h3><p>Sopečné kopce posypané černým čedičem, vzniklé před asi 180 miliony let.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.webp" alt="Host skáčící do studeného pouštního pramene u oázy Bahariya" loading="lazy"></div><div class="pad"><h3>Koupání ve studeném prameni</h3><p>Skrytý přírodní pramen v dunách, vlastní bazén pouště.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.webp" alt="Bílé křídové skvrny a zvlněný písek po celé Bílé poušti" loading="lazy"></div><div class="pad"><h3>Údolí Agabat</h3><p>Zlaté duny přitisknuté k bílým vápencovým útesům. Většina návštěvníků projíždí kolem. My ne.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.webp" alt="Slavný útvar Houbová a Kuřecí skála v Bílé poušti" loading="lazy"></div><div class="pad"><h3>Bílá poušť</h3><p>Křídové houby a monolity vytesané tisíci lety větru.</p></div></div></div>
   </div>
 </section>
 
@@ -384,9 +395,9 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="split">
       <div class="photos reveal">
-        <img width="1080" height="1350" src="/img/camp-sunrise.jpg" alt="Pouštní tábor při východu slunce s řadou stanů, koberci a stoly" loading="lazy">
-        <img width="959" height="960" src="/img/campfire-tents.jpg" alt="Táborový oheň zářící před barevnými kupolovými stany v noci" loading="lazy">
-        <img width="960" height="1280" src="/img/food-spread.jpg" alt="Pohled shora na beduínskou večeři s chlebem, pomazánkami, mangem a saláty" loading="lazy">
+        <img width="1080" height="1350" src="/img/camp-sunrise.webp" alt="Pouštní tábor při východu slunce s řadou stanů, koberci a stoly" loading="lazy">
+        <img width="959" height="960" src="/img/campfire-tents.webp" alt="Táborový oheň zářící před barevnými kupolovými stany v noci" loading="lazy">
+        <img width="960" height="1280" src="/img/food-spread.webp" alt="Pohled shora na beduínskou večeři s chlebem, pomazánkami, mangem a saláty" loading="lazy">
       </div>
       <div class="reveal">
         <div class="eyebrow">Noc</div>
@@ -402,7 +413,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="eyebrow reveal">Galerie</div>
     <h2 class="reveal">Každá fotka je skutečná.<br>Foceno na našich vlastních výletech.</h2>
-    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.jpg" alt="Zlatá houbová skála proti zatažené modré obloze" loading="lazy"><figcaption>Zlatá hodinka u Houbové skály</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.jpg" alt="Houbová a Kuřecí skála jako silueta proti zapadajícímu slunci" loading="lazy"><figcaption>Silueta při západu slunce</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.jpg" alt="Houbová a Kuřecí skála v zlatém večerním světle" loading="lazy"><figcaption>Večerní světlo</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.jpg" alt="Konvice hřející se nad opravdovým táborákem v noci" loading="lazy"><figcaption>Čaj na ohni</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.jpg" alt="Dva hosté opření o obří houbový útvar" loading="lazy"><figcaption>Hosté u Houbové skály</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.jpg" alt="Bílý jídelní stan a malý táborák pod sytě oranžovým západem slunce" loading="lazy"><figcaption>Tábor při západu slunce</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.jpg" alt="Pár stojící uvnitř přírodního křídového oblouku" loading="lazy"><figcaption>Křídový oblouk</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.jpg" alt="Tři hosté pózující s Land Cruiserem naloženým koberci na střeše" loading="lazy"><figcaption>Naše posádka 4x4</figcaption></figure><figure class="gal reveal" class="wide"><img width="1156" height="520" src="/img/guest-smiling.jpg" alt="Usmívající se host na křídovém výchozu nad útvary" loading="lazy"><figcaption>Na střeše světa</figcaption></figure><figure class="gal reveal" class="wide"><img width="715" height="536" src="/img/guests-women.jpg" alt="Tři hostky sedící na křídové skále" loading="lazy"><figcaption>Hosté z Evropy</figcaption></figure></div>
+    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.webp" alt="Zlatá houbová skála proti zatažené modré obloze" loading="lazy"><figcaption>Zlatá hodinka u Houbové skály</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.webp" alt="Houbová a Kuřecí skála jako silueta proti zapadajícímu slunci" loading="lazy"><figcaption>Silueta při západu slunce</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.webp" alt="Houbová a Kuřecí skála v zlatém večerním světle" loading="lazy"><figcaption>Večerní světlo</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.webp" alt="Konvice hřející se nad opravdovým táborákem v noci" loading="lazy"><figcaption>Čaj na ohni</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.webp" alt="Dva hosté opření o obří houbový útvar" loading="lazy"><figcaption>Hosté u Houbové skály</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.webp" alt="Bílý jídelní stan a malý táborák pod sytě oranžovým západem slunce" loading="lazy"><figcaption>Tábor při západu slunce</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.webp" alt="Pár stojící uvnitř přírodního křídového oblouku" loading="lazy"><figcaption>Křídový oblouk</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.webp" alt="Tři hosté pózující s Land Cruiserem naloženým koberci na střeše" loading="lazy"><figcaption>Naše posádka 4x4</figcaption></figure><figure class="gal reveal" class="wide"><img width="1156" height="520" src="/img/guest-smiling.webp" alt="Usmívající se host na křídovém výchozu nad útvary" loading="lazy"><figcaption>Na střeše světa</figcaption></figure><figure class="gal reveal" class="wide"><img width="715" height="536" src="/img/guests-women.webp" alt="Tři hostky sedící na křídové skále" loading="lazy"><figcaption>Hosté z Evropy</figcaption></figure></div>
   </div>
 </section>
 
@@ -458,9 +469,9 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="split">
       <div class="reveal"><h3 style="margin-top:1.4rem">Let do Káhiry (CAI)</h3><p class="lede">Přímé lety z většiny evropských hlavních měst trvají 3,5 až 5 hodin. Přistaňte v Káhiře, přespěte jednu noc ve městě a my vás druhý den ráno v 7:00 vyzvedneme v hotelu. Další večer jste zpět v hotelu.</p><h3 style="margin-top:1.4rem">Vízum</h3><p class="lede">Na většinu evropských pasů se egyptské vízum vydává po příletu na káhirském letišti (asi 25 USD) nebo jako e-vízum online předem. Před odletem si ověřte pravidla pro vaši národnost.</p><h3 style="margin-top:1.4rem">Kdy přijet</h3><p class="lede">Sezóna je říjen až duben: slunečné dny s 20-25&deg;C, zatímco Evropa mrzne. Prosinec až únor je vrchol, rezervujte včas.</p><h3 style="margin-top:1.4rem">Co si sbalit</h3><p class="lede">Teplou vrstvu na pouštní noc, opalovací krém, sluneční brýle a fotoaparát. Všechno ostatní zajistíme: stany, matrace, deky, jídlo a pití.</p></div>
       <div class="photos reveal">
-        <img width="1200" height="1593" src="/img/campfire-night.jpg" alt="Konvice na táboráku v noci v táboře Bílé pouště" loading="lazy">
-        <img width="960" height="1280" src="/img/guest-selfie.jpg" alt="Host fotící selfie při západu slunce v Bílé poušti" loading="lazy">
-        <img width="960" height="1280" src="/img/black-desert.jpg" alt="Sopečná hora Černé pouště nad zlatým pískem, na cestě z Káhiry" loading="lazy">
+        <img width="1200" height="1593" src="/img/campfire-night.webp" alt="Konvice na táboráku v noci v táboře Bílé pouště" loading="lazy">
+        <img width="960" height="1280" src="/img/guest-selfie.webp" alt="Host fotící selfie při západu slunce v Bílé poušti" loading="lazy">
+        <img width="960" height="1280" src="/img/black-desert.webp" alt="Sopečná hora Černé pouště nad zlatým pískem, na cestě z Káhiry" loading="lazy">
       </div>
     </div>
   </div>
@@ -470,7 +481,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap reveal">
     <div class="eyebrow">Otázky</div>
     <h2>Než se zeptáte.</h2>
-    <details><summary>Kde je Bílá poušť?</summary><p>Bílá poušť (Sahara el Beyda) je chráněná rezervace u oázy Farafra, asi 370 km jihozápadně od Káhiry. Naše trasa zahrnuje také oázu Bahariya, Černou poušť a údolí Agabat.</p></details><details><summary>Kdy je nejlepší doba na návštěvu?</summary><p>Říjen až duben: mírné slunečné dny kolem 20-25&deg;C a chladné, jasné noci. Ideální únik za zimním sluncem z Evropy. V létě výlety jezdí také, ale dny jsou horké.</p></details><details><summary>Co je zahrnuto v ceně?</summary><p>Kempingové vybavení, doprava 4x4 z Káhiry a zpět, všechna jídla, nápoje, váš beduínský průvodce a vstupenky do rezervace. Napište nám na WhatsApp pro aktuální cenu a termíny.</p></details><details><summary>Jak rezervuji?</summary><p>Napište nám na WhatsApp na +20 127 822 0004. Odpovíme s cenou, volnými termíny a vším, co potřebujete. Mluvíte přímo s týmem, který výlet vede, bez prostředníků.</p></details><details><summary>Potřebuji zkušenosti s kempem nebo safari?</summary><p>Ne. Naši beduínští průvodci zajistí řízení, tábor i vaření. Vezměte si teplé vrstvy na noc, opalovací krém a fotoaparát.</p></details><details><summary>Je to vhodné pro sólo cestovatele a ženy?</summary><p>Ano. Výlety jedou v malých skupinách, takže sólo cestovatelé jsou po celou dobu součástí přátelské skupiny. Mnoho našich hostů jsou ženy cestující samy z Evropy.</p></details>
+    <details><summary>Kolik to stojí?</summary><p>Záleží na termínu a velikosti skupiny. Napište nám na WhatsApp a během několika minut odpovíme s aktuální cenou a volnými termíny. Nezávazně.</p></details><details><summary>Kde je Bílá poušť?</summary><p>Bílá poušť (Sahara el Beyda) je chráněná rezervace u oázy Farafra, asi 370 km jihozápadně od Káhiry. Naše trasa zahrnuje také oázu Bahariya, Černou poušť a údolí Agabat.</p></details><details><summary>Kdy je nejlepší doba na návštěvu?</summary><p>Říjen až duben: mírné slunečné dny kolem 20-25&deg;C a chladné, jasné noci. Ideální únik za zimním sluncem z Evropy. V létě výlety jezdí také, ale dny jsou horké.</p></details><details><summary>Co je zahrnuto v ceně?</summary><p>Kempingové vybavení, doprava 4x4 z Káhiry a zpět, všechna jídla, nápoje, váš beduínský průvodce a vstupenky do rezervace. Napište nám na WhatsApp pro aktuální cenu a termíny.</p></details><details><summary>Jak rezervuji?</summary><p>Napište nám na WhatsApp na +20 127 822 0004. Odpovíme s cenou, volnými termíny a vším, co potřebujete. Mluvíte přímo s týmem, který výlet vede, bez prostředníků.</p></details><details><summary>Potřebuji zkušenosti s kempem nebo safari?</summary><p>Ne. Naši beduínští průvodci zajistí řízení, tábor i vaření. Vezměte si teplé vrstvy na noc, opalovací krém a fotoaparát.</p></details><details><summary>Je to vhodné pro sólo cestovatele a ženy?</summary><p>Ano. Výlety jedou v malých skupinách, takže sólo cestovatelé jsou po celou dobu součástí přátelské skupiny. Mnoho našich hostů jsou ženy cestující samy z Evropy.</p></details>
   </div>
 </section>
 <section class="cta-band">

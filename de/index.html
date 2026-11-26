@@ -162,7 +162,7 @@ summary::after{content:"+";position:absolute;right:0;top:-2px;font-size:1.4rem;c
 details[open] summary::after{content:"\2212"}
 details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 /* CTA BAND */
-.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.jpg') center/cover;color:#fff;text-align:center;padding:88px 0}
+.cta-band{background:linear-gradient(rgba(20,14,8,.55),rgba(20,14,8,.78)),url('/img/sunset-silhouette.webp') center/cover;color:#fff;text-align:center;padding:88px 0}
 .cta-band h2{color:#fff}
 .cta-band p{max-width:38em;margin:0 auto 26px;opacity:.93}
 /* REVIEWS */
@@ -174,7 +174,7 @@ details p{margin-top:10px;color:var(--ink-soft);font-size:.96rem}
 .quote p{font-size:.98rem;font-style:italic}
 .quote .who{margin-top:12px;font-size:.82rem;font-style:normal;color:var(--ink-soft);font-weight:600}
 /* SEASONAL BANNER */
-.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.jpg') center/cover;color:#fff;text-align:center;padding:64px 0}
+.season{background:linear-gradient(rgba(20,14,8,.62),rgba(20,14,8,.72)),url('/img/campfire-night.webp') center/cover;color:#fff;text-align:center;padding:64px 0}
 .season h2{color:#fff}
 .season p{max-width:40em;margin:0 auto 24px;opacity:.93}
 .season .tag{display:inline-block;background:var(--accent);padding:.35em .9em;border-radius:999px;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
@@ -200,10 +200,21 @@ footer small{opacity:.6;font-size:.8rem}
 .sticky{position:fixed;left:16px;right:16px;bottom:16px;z-index:50;display:flex;justify-content:center;pointer-events:none}
 .sticky .btn{pointer-events:auto;width:100%;max-width:420px;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.35)}
 @media(min-width:821px){.sticky{left:auto;right:24px;bottom:24px}.sticky .btn{width:auto}}
+
+.flash-offer{position:fixed;top:0;left:0;right:0;z-index:70;background:linear-gradient(90deg,#92400e,#b45309);color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:8px 12px;line-height:1.35}
+.flash-offer a{color:#fff;text-decoration:none}
+.flash-offer a:hover{text-decoration:underline}
+.nav{top:36px}
+@media(max-width:759px){
+.nav-in{flex-wrap:wrap;gap:8px;padding:10px 14px}
+.nav-right{margin-left:auto;gap:10px}
+.nav .langs{order:3;width:100%;overflow-x:auto;scrollbar-width:none;padding-top:2px}
+.nav .langs::-webkit-scrollbar{display:none}
+}
 </style>
 <style>.flashbar{display:none;background:#c0392b;color:#fff;text-align:center;padding:9px 14px;font-size:.92rem;font-weight:600;position:relative;z-index:50}.flashbar a{color:#fff;text-decoration:underline}</style><link rel="stylesheet" href="/site.css">
 </head>
-<body><div class="flashbar" id="flashbar"><a href="https://wa.me/201278220004?text=FLASH15%20-%20Hi%21%20I%27d%20like%20the%20flash%20offer.">FLASH: Die ersten 5 Dezember-Buchungen bekommen 15% Rabatt - endet morgen Mitternacht (Kairo)</a></div>
+<body><div class="flash-offer"><a href="https://wa.me/201278220004?text=Hi%21%20I%27d%20like%20to%20claim%20the%20December%20offer%20FLASH15." rel="noopener">Dezember-Angebot: 15% Rabatt · Code FLASH15 · nur die ersten 5 Buchungen · per WhatsApp sichern →</a></div><div class="flashbar" id="flashbar"><a href="https://wa.me/201278220004?text=FLASH15%20-%20Hi%21%20I%27d%20like%20the%20flash%20offer.">FLASH: Die ersten 5 Dezember-Buchungen bekommen 15% Rabatt - endet morgen Mitternacht (Kairo)</a></div>
 <nav class="nav"><div class="nav-in">
 <a class="brand" href="/de/">Explore White Desert</a>
 <div class="nav-links"><a href="/de/#journey">Die Reise</a><a href="/de/#camp">Die Nacht</a><a href="/de/weisse-wueste-safari-2-tage/">Programm</a><a href="/de/#faq">FAQ</a></div>
@@ -212,8 +223,8 @@ footer small{opacity:.6;font-size:.8rem}
 
 <header class="hero">
   <picture>
-    <source media="(min-width: 769px)" srcset="/img/hero-desktop.jpg">
-    <img width="1170" height="1554" src="/img/hero-mobile.jpg" alt="Vast white chalk field in Egypt's White Desert, sculpted by wind into otherworldly formations" fetchpriority="high">
+    <source media="(min-width: 769px)" srcset="/img/hero-desktop.webp">
+    <img width="1170" height="1554" src="/img/hero-mobile.webp" alt="Vast white chalk field in Egypt's White Desert, sculpted by wind into otherworldly formations" fetchpriority="high">
   </picture>
   <div class="hero-inner wrap">
     <div class="badge">Saison Oktober bis April · Kleine Gruppen · Ab Kairo</div>
@@ -238,7 +249,7 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="eyebrow reveal">Die Reise</div>
     <h2 class="reveal">Vier Stunden von Kairo,<br>ein anderer Planet.</h2>
     <p class="lede reveal">Die Straße südwärts von Kairo überquert schwarze Vulkanhügel, eine kalte Quelle in den Dünen und die goldenen Felsen des Agabat-Tals, bevor die Welt weiß wird.</p>
-    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.jpg" alt="Schwarzer Vulkanberg über goldenem Sand in der Schwarzen Wüste" loading="lazy"></div><div class="pad"><h3>Die Schwarze Wüste</h3><p>Vulkanhügel mit schwarzem Basalt, entstanden vor rund 180 Millionen Jahren.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.jpg" alt="Gast springt in eine kalte Wüstenquelle nahe der Bahariya-Oase" loading="lazy"></div><div class="pad"><h3>Ein Bad in der kalten Quelle</h3><p>Eine versteckte Naturquelle in den Dünen, der Swimmingpool der Wüste.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.jpg" alt="Weiße Kreideflächen und Sandwellen in der Weißen Wüste" loading="lazy"></div><div class="pad"><h3>Das Agabat-Tal</h3><p>Goldene Dünen gegen weiße Kalksteinfelsen. Die meisten Besucher hetzen vorbei. Wir nicht.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.jpg" alt="Die berühmte Pilz- und Hühnerfelsen-Formation in der Weißen Wüste" loading="lazy"></div><div class="pad"><h3>Die Weiße Wüste</h3><p>Kreidepilze und Monolithen, geformt von Jahrtausenden Wind.</p></div></div></div>
+    <div class="cards"><div class="card reveal"><div class="imgbox"><span class="num">1</span><img width="960" height="1280" src="/img/black-desert.webp" alt="Schwarzer Vulkanberg über goldenem Sand in der Schwarzen Wüste" loading="lazy"></div><div class="pad"><h3>Die Schwarze Wüste</h3><p>Vulkanhügel mit schwarzem Basalt, entstanden vor rund 180 Millionen Jahren.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">2</span><img width="960" height="1200" src="/img/cold-spring.webp" alt="Gast springt in eine kalte Wüstenquelle nahe der Bahariya-Oase" loading="lazy"></div><div class="pad"><h3>Ein Bad in der kalten Quelle</h3><p>Eine versteckte Naturquelle in den Dünen, der Swimmingpool der Wüste.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">3</span><img width="1024" height="1280" src="/img/chalk-vista.webp" alt="Weiße Kreideflächen und Sandwellen in der Weißen Wüste" loading="lazy"></div><div class="pad"><h3>Das Agabat-Tal</h3><p>Goldene Dünen gegen weiße Kalksteinfelsen. Die meisten Besucher hetzen vorbei. Wir nicht.</p></div></div><div class="card reveal"><div class="imgbox"><span class="num">4</span><img width="960" height="1280" src="/img/mushroom-chicken.webp" alt="Die berühmte Pilz- und Hühnerfelsen-Formation in der Weißen Wüste" loading="lazy"></div><div class="pad"><h3>Die Weiße Wüste</h3><p>Kreidepilze und Monolithen, geformt von Jahrtausenden Wind.</p></div></div></div>
   </div>
 </section>
 
@@ -246,9 +257,9 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="split">
       <div class="photos reveal">
-        <img width="1080" height="1350" src="/img/camp-sunrise.jpg" alt="Desert camp at sunrise with tent row, rugs and tables" loading="lazy">
-        <img width="959" height="960" src="/img/campfire-tents.jpg" alt="Campfire glowing in front of colorful dome tents at night" loading="lazy">
-        <img width="960" height="1280" src="/img/food-spread.jpg" alt="Overhead view of a Bedouin dinner spread with bread, dips, mango and salads" loading="lazy">
+        <img width="1080" height="1350" src="/img/camp-sunrise.webp" alt="Desert camp at sunrise with tent row, rugs and tables" loading="lazy">
+        <img width="959" height="960" src="/img/campfire-tents.webp" alt="Campfire glowing in front of colorful dome tents at night" loading="lazy">
+        <img width="960" height="1280" src="/img/food-spread.webp" alt="Overhead view of a Bedouin dinner spread with bread, dips, mango and salads" loading="lazy">
       </div>
       <div class="reveal">
         <div class="eyebrow">Die Nacht</div>
@@ -264,7 +275,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap">
     <div class="eyebrow reveal">Galerie</div>
     <h2 class="reveal">Jedes Foto hier ist echt.<br>Auf unseren eigenen Touren aufgenommen.</h2>
-    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.jpg" alt="Goldener Pilzfelsen vor blauem Himmel" loading="lazy"><figcaption>Goldene Stunde am Pilzfelsen</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.jpg" alt="Pilz- und Hühnerfelsen als Silhouette im Sonnenuntergang" loading="lazy"><figcaption>Sonnenuntergang</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.jpg" alt="Pilz- und Hühnerfelsen in goldenem Abendlicht" loading="lazy"><figcaption>Abendlicht</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.jpg" alt="Kessel über dem Lagerfeuer bei Nacht" loading="lazy"><figcaption>Tee auf dem Feuer</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.jpg" alt="Zwei Gäste an einer riesigen Pilzformation" loading="lazy"><figcaption>Gäste am Pilzfelsen</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.jpg" alt="Zelt und kleines Lagerfeuer unter tieforange gefärbtem Himmel" loading="lazy"><figcaption>Camp bei Sonnenuntergang</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.jpg" alt="Paar in einem natürlichen Kreidebogen" loading="lazy"><figcaption>Der Kreidebogen</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.jpg" alt="Drei Gäste posieren mit einem Land Cruiser" loading="lazy"><figcaption>Unsere 4x4-Crew</figcaption></figure><figure class="gal reveal" class="wide"><img width="1156" height="520" src="/img/guest-smiling.jpg" alt="Lachender Gast auf einem Kreidevorsprung" loading="lazy"><figcaption>Auf dem Dach der Wüste</figcaption></figure><figure class="gal reveal" class="wide"><img width="715" height="536" src="/img/guests-women.jpg" alt="Drei weibliche Gäste auf einem Kreidefelsen" loading="lazy"><figcaption>Gäste aus Europa</figcaption></figure></div>
+    <div class="gallery-grid"><figure class="gal reveal"><img width="1080" height="1080" src="/img/golden-mushroom.webp" alt="Goldener Pilzfelsen vor blauem Himmel" loading="lazy"><figcaption>Goldene Stunde am Pilzfelsen</figcaption></figure><figure class="gal reveal"><img width="1080" height="1350" src="/img/sunset-silhouette.webp" alt="Pilz- und Hühnerfelsen als Silhouette im Sonnenuntergang" loading="lazy"><figcaption>Sonnenuntergang</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/mushroom-golden.webp" alt="Pilz- und Hühnerfelsen in goldenem Abendlicht" loading="lazy"><figcaption>Abendlicht</figcaption></figure><figure class="gal reveal"><img width="1200" height="1593" src="/img/campfire-night.webp" alt="Kessel über dem Lagerfeuer bei Nacht" loading="lazy"><figcaption>Tee auf dem Feuer</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/couple-mushroom.webp" alt="Zwei Gäste an einer riesigen Pilzformation" loading="lazy"><figcaption>Gäste am Pilzfelsen</figcaption></figure><figure class="gal reveal"><img width="846" height="1128" src="/img/tent-sunset.webp" alt="Zelt und kleines Lagerfeuer unter tieforange gefärbtem Himmel" loading="lazy"><figcaption>Camp bei Sonnenuntergang</figcaption></figure><figure class="gal reveal"><img width="959" height="1280" src="/img/couple-arch.webp" alt="Paar in einem natürlichen Kreidebogen" loading="lazy"><figcaption>Der Kreidebogen</figcaption></figure><figure class="gal reveal"><img width="960" height="1280" src="/img/guests-landcruiser.webp" alt="Drei Gäste posieren mit einem Land Cruiser" loading="lazy"><figcaption>Unsere 4x4-Crew</figcaption></figure><figure class="gal reveal" class="wide"><img width="1156" height="520" src="/img/guest-smiling.webp" alt="Lachender Gast auf einem Kreidevorsprung" loading="lazy"><figcaption>Auf dem Dach der Wüste</figcaption></figure><figure class="gal reveal" class="wide"><img width="715" height="536" src="/img/guests-women.webp" alt="Drei weibliche Gäste auf einem Kreidefelsen" loading="lazy"><figcaption>Gäste aus Europa</figcaption></figure></div>
   </div>
 </section>
 
@@ -320,9 +331,9 @@ footer small{opacity:.6;font-size:.8rem}
     <div class="split">
       <div class="reveal"><h3 style="margin-top:1.4rem">Flug nach Kairo (CAI)</h3><p class="lede">Direktflüge aus den meisten europäischen Hauptstädten dauern 3,5 bis 5 Stunden. Landen Sie in Kairo, schlafen Sie eine Nacht in der Stadt, und wir holen Sie am nächsten Morgen um 7:00 an Ihrem Hotel ab. Am Folgetag sind Sie abends zurück.</p><h3 style="margin-top:1.4rem">Visum</h3><p class="lede">Die meisten europäischen Pässe erhalten ein Visum bei Ankunft am Flughafen Kairo (ca. 25 $) oder ein e-Visum online im Voraus. Prüfen Sie die Regeln für Ihre Nationalität vor dem Flug.</p><h3 style="margin-top:1.4rem">Beste Reisezeit</h3><p class="lede">Oktober bis April ist Saison: sonnige 20-25 °C, während Europa friert. Dezember bis Februar ist Hochsaison, früh buchen.</p><h3 style="margin-top:1.4rem">Packliste</h3><p class="lede">Eine warme Schicht für die Wüstennacht, Sonnencreme, Sonnenbrille und eine Kamera. Alles andere stellen wir: Zelte, Matratzen, Decken, Essen und Getränke.</p></div>
       <div class="photos reveal">
-        <img width="1200" height="1593" src="/img/campfire-night.jpg" alt="Kettle on the campfire at night in the White Desert camp" loading="lazy">
-        <img width="960" height="1280" src="/img/guest-selfie.jpg" alt="Guest taking a selfie at sunset in the White Desert" loading="lazy">
-        <img width="960" height="1280" src="/img/black-desert.jpg" alt="Black Desert volcanic mountain over golden sand, on the road from Cairo" loading="lazy">
+        <img width="1200" height="1593" src="/img/campfire-night.webp" alt="Kettle on the campfire at night in the White Desert camp" loading="lazy">
+        <img width="960" height="1280" src="/img/guest-selfie.webp" alt="Guest taking a selfie at sunset in the White Desert" loading="lazy">
+        <img width="960" height="1280" src="/img/black-desert.webp" alt="Black Desert volcanic mountain over golden sand, on the road from Cairo" loading="lazy">
       </div>
     </div>
   </div>
@@ -332,7 +343,7 @@ footer small{opacity:.6;font-size:.8rem}
   <div class="wrap reveal">
     <div class="eyebrow">Fragen</div>
     <h2>Bevor Sie fragen.</h2>
-    <details><summary>Wo liegt die Weiße Wüste?</summary><p>Die Weiße Wüste (Sahara el Beyda) ist ein Schutzgebiet nahe der Farafra-Oase, etwa 370 km südwestlich von Kairo. Unsere Route umfasst auch die Bahariya-Oase, die Schwarze Wüste und das Agabat-Tal.</p></details><details><summary>Wann ist die beste Reisezeit?</summary><p>Oktober bis April: milde, sonnige Tage um 20-25 °C und kühle, klare Nächte. Die perfekte Wintersonnen-Auszeit aus Europa. Sommertouren laufen auch, aber die Tage sind heiß.</p></details><details><summary>Was ist im Preis enthalten?</summary><p>Camping-Ausrüstung, 4x4-Transport ab Kairo und zurück, alle Mahlzeiten, Getränke, Ihr Beduinen-Guide und die Eintrittskarten fürs Reservat. Schreiben Sie uns auf WhatsApp für aktuellen Preis und Termine.</p></details><details><summary>Wie buche ich?</summary><p>Schreiben Sie uns auf WhatsApp unter +20 127 822 0004. Wir antworten mit Preis, freien Terminen und allem Wichtigen. Sie sprechen direkt mit dem Team, das die Tour fährt, keine Zwischenhändler.</p></details><details><summary>Brauche ich Camping- oder Safari-Erfahrung?</summary><p>Keine. Unsere Beduinen-Guides übernehmen Fahren, Camp und Küche. Bringen Sie warme Schichten für die Nacht, Sonnencreme und eine Kamera mit.</p></details><details><summary>Ist die Tour für Alleinreisende und Frauen geeignet?</summary><p>Ja. Die Touren laufen in kleinen Gruppen, Alleinreisende sind den ganzen Weg Teil einer freundlichen Gruppe. Viele unserer Gäste sind Frauen, die allein aus Europa reisen.</p></details>
+    <details><summary>Was kostet die Tour?</summary><p>Das hängt von Ihrem Datum und der Gruppengröße ab. Schreiben Sie uns auf WhatsApp — wir antworten in wenigen Minuten mit dem aktuellen Preis und freien Terminen. Ganz unverbindlich.</p></details><details><summary>Wo liegt die Weiße Wüste?</summary><p>Die Weiße Wüste (Sahara el Beyda) ist ein Schutzgebiet nahe der Farafra-Oase, etwa 370 km südwestlich von Kairo. Unsere Route umfasst auch die Bahariya-Oase, die Schwarze Wüste und das Agabat-Tal.</p></details><details><summary>Wann ist die beste Reisezeit?</summary><p>Oktober bis April: milde, sonnige Tage um 20-25 °C und kühle, klare Nächte. Die perfekte Wintersonnen-Auszeit aus Europa. Sommertouren laufen auch, aber die Tage sind heiß.</p></details><details><summary>Was ist im Preis enthalten?</summary><p>Camping-Ausrüstung, 4x4-Transport ab Kairo und zurück, alle Mahlzeiten, Getränke, Ihr Beduinen-Guide und die Eintrittskarten fürs Reservat. Schreiben Sie uns auf WhatsApp für aktuellen Preis und Termine.</p></details><details><summary>Wie buche ich?</summary><p>Schreiben Sie uns auf WhatsApp unter +20 127 822 0004. Wir antworten mit Preis, freien Terminen und allem Wichtigen. Sie sprechen direkt mit dem Team, das die Tour fährt, keine Zwischenhändler.</p></details><details><summary>Brauche ich Camping- oder Safari-Erfahrung?</summary><p>Keine. Unsere Beduinen-Guides übernehmen Fahren, Camp und Küche. Bringen Sie warme Schichten für die Nacht, Sonnencreme und eine Kamera mit.</p></details><details><summary>Ist die Tour für Alleinreisende und Frauen geeignet?</summary><p>Ja. Die Touren laufen in kleinen Gruppen, Alleinreisende sind den ganzen Weg Teil einer freundlichen Gruppe. Viele unserer Gäste sind Frauen, die allein aus Europa reisen.</p></details>
   </div>
 </section>
 <section class="cta-band">
