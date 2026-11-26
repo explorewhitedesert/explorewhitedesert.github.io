@@ -29,3 +29,6 @@
 
 /* nav-fade: scroll affordance on narrow phones */
 @media (max-width:430px){.nav-links{gap:14px;-webkit-mask-image:linear-gradient(90deg,#000 84%,transparent);mask-image:linear-gradient(90deg,#000 84%,transparent)}}
+
+/* hide nav CTA pill on phones where the sticky bottom bar already covers booking */
+@media (max-width:900px){body:has(.sticky) .nav-right .btn{display:none}}
