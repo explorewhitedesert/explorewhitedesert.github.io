@@ -40,7 +40,8 @@ img,video{height:auto}
 img{background:linear-gradient(180deg,#efe5d3,#e6dbc4)}
 
 /* language globe dropdown */
-details.langdd{display:inline-block}
+details.langdd{display:inline-block;background:none;border-radius:0;padding:0;margin-bottom:0;box-shadow:none}
+details.langdd summary::after{content:none}
 details.langdd summary{list-style:none;display:none;cursor:pointer;align-items:center;gap:6px;padding:6px 10px;border-radius:8px;background:rgba(20,14,8,.55);color:#fff;font-weight:700;font-size:.85rem;box-shadow:0 1px 6px rgba(0,0,0,.25)}
 details.langdd summary::-webkit-details-marker{display:none}
 details.langdd>.langs{display:flex}
