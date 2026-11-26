@@ -320,14 +320,15 @@ footer small{opacity:.6;font-size:.8rem}
 
 <section id="program">
   <div class="wrap">
-    <div class="dayhead reveal"><div class="daynum">1</div><h3>Día 1: El Cairo &rarr; Bahariya &rarr; el Desierto Blanco</h3></div>
+    <details class="dayacc" open><summary class="dayhead"><div class="daynum">1</div><h3>Día 1: El Cairo &rarr; Bahariya &rarr; el Desierto Blanco</h3><span class="chev">&#9662;</span></summary>
     <div class="tl"><div class="tl-stop reveal"><div class="when">Mañana</div><p>Recogida en tu hotel de El Cairo sobre las 7:00 y viaje hacia el sur hasta el oasis de Bahariya (4-5 horas con parada para café). En el oasis cambiamos al 4x4 y comemos.</p></div><div class="tl-stop reveal"><div class="when">Mediodía</div><p>En el desierto: las colinas volcánicas del Desierto Negro y luego un baño en una fuente natural fría escondida entre las dunas.</p></div><div class="tl-stop reveal"><div class="when">Tarde</div><p>La Montaña de Cristal y los acantilados dorados del valle de Agabat, antes de que el paisaje se vuelva blanco.</p></div><div class="tl-stop reveal"><div class="when">Noche</div><p>Atardecer entre las formaciones de yeso. Nuestro equipo beduino monta el campamento y cocina la cena al fuego. Después, las estrellas: sin contaminación lumínica, solo un cielo lleno de estrellas sobre tu tienda.</p></div></div>
     <div class="photos reveal" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:18px">
       <img width="960" height="1280" src="/img/black-desert.webp" alt="Black Desert volcanic hills" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%">
       <img width="960" height="1200" src="/img/cold-spring.webp" alt="Cold spring swim near Bahariya Oasis" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%">
       <img width="1024" height="1280" src="/img/chalk-vista.webp" alt="Agabat Valley chalk cliffs" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%">
     </div>
-    <div class="dayhead reveal"><div class="daynum">2</div><h3>Día 2: Amanecer &rarr; Roca del Hongo &rarr; El Cairo</h3></div>
+    </details>
+    <details class="dayacc" open><summary class="dayhead"><div class="daynum">2</div><h3>Día 2: Amanecer &rarr; Roca del Hongo &rarr; El Cairo</h3><span class="chev">&#9662;</span></summary>
     <div class="tl"><div class="tl-stop reveal"><div class="when">Temprano</div><p>Amanecer entre las rocas blancas, desayuno en el campamento.</p></div><div class="tl-stop reveal"><div class="when">Mañana</div><p>La Roca del Hongo y la Gallina y el Valle de las Tiendas, luego sandboard en las dunas.</p></div><div class="tl-stop reveal"><div class="when">Mediodía</div><p>Regreso hacia Bahariya, comida en el oasis.</p></div><div class="tl-stop reveal"><div class="when">Tarde</div><p>Llegada a tu hotel de El Cairo, sobre las 17:00-18:00.</p></div></div>
     <div class="photos reveal" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:18px">
       <img width="1080" height="1350" src="/img/camp-sunrise.webp" alt="Sunrise at the desert camp" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%">
@@ -335,7 +336,8 @@ footer small{opacity:.6;font-size:.8rem}
       <img width="1080" height="1350" src="/img/sunset-silhouette.webp" alt="Sunset silhouette in the White Desert" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%">
     </div>
   </div>
-<p class="wa-inline" style="text-align:center;margin:24px 0 4px"><a href="https://wa.me/201278220004?text=Hola%20Explore%20White%20Desert%21%20Una%20pregunta%20r%C3%A1pida%3A" rel="noopener" style="display:inline-block;background:#1faa55;color:#fff;text-decoration:none;padding:10px 22px;border-radius:999px;font-weight:700;font-size:.95rem">Preguntar por WhatsApp &rarr;</a></p></section>
+</details>
+  <p class="wa-inline" style="text-align:center;margin:24px 0 4px"><a href="https://wa.me/201278220004?text=Hola%20Explore%20White%20Desert%21%20Una%20pregunta%20r%C3%A1pida%3A" rel="noopener" style="display:inline-block;background:#1faa55;color:#fff;text-decoration:none;padding:10px 22px;border-radius:999px;font-weight:700;font-size:.95rem">Preguntar por WhatsApp &rarr;</a></p></section>
 
 <section class="included" id="included">
   <div class="wrap reveal">
@@ -397,5 +399,20 @@ footer small{opacity:.6;font-size:.8rem}
 </script>
 <script src="/site.js" defer></script>
 <script data-goatcounter="https://explorewhitedesert-github.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<style>
+details.dayacc summary{list-style:none;cursor:pointer}
+details.dayacc summary::-webkit-details-marker{display:none}
+details.dayacc .chev{margin-left:auto;flex:none;opacity:.55;transition:transform .25s}
+details.dayacc[open] .chev{transform:rotate(180deg)}
+@media (min-width:761px){details.dayacc .chev{display:none}}
+@media (max-width:760px){
+  details.dayacc{margin-top:18px}
+  details.dayacc summary{margin-top:0;padding:14px 16px;background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.06);gap:12px}
+  details.dayacc summary .daynum{width:42px;height:42px;font-size:1.05rem}
+  details.dayacc summary h3{font-size:1rem;line-height:1.3}
+  details.dayacc .tl{margin-top:8px}
+}
+</style>
+<script>if(matchMedia("(max-width:760px)").matches)document.querySelectorAll("#program details.dayacc").forEach(function(d){d.open=false});</script>
 </body>
 </html>

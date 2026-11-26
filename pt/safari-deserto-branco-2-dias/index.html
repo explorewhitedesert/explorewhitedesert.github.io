@@ -281,14 +281,16 @@ footer small{opacity:.6;font-size:.8rem}
 
 <section id="program">
   <div class="wrap">
-    <div class="dayhead reveal"><div class="daynum">1</div><h3>Dia 1: Cairo → Bahariya → o Deserto Branco</h3></div>
+    <details class="dayacc" open><summary class="dayhead"><div class="daynum">1</div><h3>Dia 1: Cairo → Bahariya → o Deserto Branco</h3><span class="chev">&#9662;</span></summary>
     <div class="tl"><div class="tl-stop reveal"><div class="when">Manhã</div><p>Vamos buscá-lo ao seu hotel no Cairo por volta das 7:00 e seguimos para sul, rumo ao Oásis de Bahariya (4-5 horas com pausa para café). No oásis trocamos para o 4x4 e almoçamos.</p></div><div class="tl-stop reveal"><div class="when">Meio-dia</div><p>Entramos no deserto: as colinas vulcânicas do Deserto Negro e depois um mergulho numa nascente natural fria escondida nas dunas.</p></div><div class="tl-stop reveal"><div class="when">Tarde</div><p>A Montanha de Cristal e as falésias douradas do Vale de Agabat, antes de a paisagem ficar branca.</p></div><div class="tl-stop reveal"><div class="when">Fim da tarde</div><p>Pôr do sol entre as formações de giz. A nossa equipa beduína monta o acampamento e cozinha o jantar na fogueira. Depois, as estrelas: sem poluição luminosa, só um céu cheio de estrelas sobre a sua tenda.</p></div></div>
     <div class="photos reveal" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:18px"><img width="960" height="1280" src="/img/black-desert.webp" alt="Colinas vulcânicas do Deserto Negro" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%"><img width="960" height="1200" src="/img/cold-spring.webp" alt="Mergulho na nascente fria perto do Oásis de Bahariya" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%"><img width="1024" height="1280" src="/img/chalk-vista.webp" alt="Falésias de giz do Vale de Agabat" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%"></div>
-    <div class="dayhead reveal"><div class="daynum">2</div><h3>Dia 2: Nascer do sol → Rocha Cogumelo → Cairo</h3></div>
+    </details>
+    <details class="dayacc" open><summary class="dayhead"><div class="daynum">2</div><h3>Dia 2: Nascer do sol → Rocha Cogumelo → Cairo</h3><span class="chev">&#9662;</span></summary>
     <div class="tl"><div class="tl-stop reveal"><div class="when">Madrugada</div><p>Nascer do sol entre as rochas brancas, pequeno-almoço no acampamento.</p></div><div class="tl-stop reveal"><div class="when">Manhã</div><p>A Rocha Cogumelo e Galinha e o Vale das Tendas, depois sandboard nas dunas.</p></div><div class="tl-stop reveal"><div class="when">Meio-dia</div><p>Regresso a Bahariya, almoço no oásis.</p></div><div class="tl-stop reveal"><div class="when">Fim da tarde</div><p>Chegada ao seu hotel no Cairo, por volta das 17:00-18:00.</p></div></div>
     <div class="photos reveal" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:18px"><img width="1080" height="1350" src="/img/camp-sunrise.webp" alt="Nascer do sol no acampamento do deserto" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%"><img width="960" height="1280" src="/img/mushroom-chicken.webp" alt="Rocha Cogumelo e Galinha" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%"><img width="1080" height="1350" src="/img/sunset-silhouette.webp" alt="Silhueta ao pôr do sol no Deserto Branco" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%"></div>
   </div>
-<p class="wa-inline" style="text-align:center;margin:24px 0 4px"><a href="https://wa.me/201278220004?text=Ol%C3%A1%20Explore%20White%20Desert%21%20Uma%20pergunta%20r%C3%A1pida%3A" rel="noopener" style="display:inline-block;background:#1faa55;color:#fff;text-decoration:none;padding:10px 22px;border-radius:999px;font-weight:700;font-size:.95rem">Perguntar no WhatsApp &rarr;</a></p></section>
+</details>
+  <p class="wa-inline" style="text-align:center;margin:24px 0 4px"><a href="https://wa.me/201278220004?text=Ol%C3%A1%20Explore%20White%20Desert%21%20Uma%20pergunta%20r%C3%A1pida%3A" rel="noopener" style="display:inline-block;background:#1faa55;color:#fff;text-decoration:none;padding:10px 22px;border-radius:999px;font-weight:700;font-size:.95rem">Perguntar no WhatsApp &rarr;</a></p></section>
 
 <section class="included" id="included">
   <div class="wrap reveal">
@@ -342,5 +344,20 @@ footer small{opacity:.6;font-size:.8rem}
 </script>
 <script src="/site.js" defer></script>
 <script data-goatcounter="https://explorewhitedesert-github.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<style>
+details.dayacc summary{list-style:none;cursor:pointer}
+details.dayacc summary::-webkit-details-marker{display:none}
+details.dayacc .chev{margin-left:auto;flex:none;opacity:.55;transition:transform .25s}
+details.dayacc[open] .chev{transform:rotate(180deg)}
+@media (min-width:761px){details.dayacc .chev{display:none}}
+@media (max-width:760px){
+  details.dayacc{margin-top:18px}
+  details.dayacc summary{margin-top:0;padding:14px 16px;background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(0,0,0,.06);gap:12px}
+  details.dayacc summary .daynum{width:42px;height:42px;font-size:1.05rem}
+  details.dayacc summary h3{font-size:1rem;line-height:1.3}
+  details.dayacc .tl{margin-top:8px}
+}
+</style>
+<script>if(matchMedia("(max-width:760px)").matches)document.querySelectorAll("#program details.dayacc").forEach(function(d){d.open=false});</script>
 </body>
 </html>
