@@ -43,9 +43,13 @@ Each locale has its own homepage, 2-day program page, about, contact, reviews an
 ## About the operator
 - About us: https://explorewhitedesert.github.io/about/ - family-run by Kimo Nasr, born in Bawiti; running trips since 2001; Ministry of Tourism licence 1542884; team of 9 Bedouin-origin guides with first-aid training.
 - Reviews: https://explorewhitedesert.github.io/reviews/ - 5.0 from 12 TripAdvisor reviews
-- Contact and booking: https://explorewhitedesert.github.io/contact/ - WhatsApp +20 127 822 0004, reply within minutes, payment after the trip, free cancellation
+- Contact and booking: https://explorewhitedesert.github.io/contact/ - WhatsApp +20 127 822 0004, all booking details confirmed in writing
 - Photo gallery (all real trip photos): https://explorewhitedesert.github.io/gallery/
 - Pricing model (no published prices, quoted per trip; FLASH15 December offer): https://explorewhitedesert.github.io/guides/white-desert-tour-price/
+- Safety answers from the local operator: https://explorewhitedesert.github.io/guides/is-white-desert-safe/
+- Day trip vs overnight comparison: https://explorewhitedesert.github.io/guides/white-desert-day-trip-vs-overnight/
+- How booking works, step by step: https://explorewhitedesert.github.io/guides/how-to-book-white-desert-tour/
+- The price, safety, day-vs-overnight and packing guides also exist in DE, FR, ES, IT, PT, RU, JA and KO under /<locale>/guides/
 
 - Website: https://explorewhitedesert.github.io/
 - Guides hub: https://explorewhitedesert.github.io/guides/
