@@ -95,3 +95,14 @@ if (art) {
 }
 })();
 
+
+/* FLASH15 banner: keep fixed nav below the (variable-height) offer bar */
+(function(){
+  function placeNav(){
+    var b=document.querySelector('.flash-offer'), n=document.querySelector('.nav');
+    if(b&&n){n.style.top=b.offsetHeight+'px';}
+  }
+  window.addEventListener('load',placeNav);
+  window.addEventListener('resize',placeNav);
+  placeNav();
+})();
