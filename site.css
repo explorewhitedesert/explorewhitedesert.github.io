@@ -32,3 +32,6 @@
 
 /* hide nav CTA pill on phones where the sticky bottom bar already covers booking */
 @media (max-width:900px){body:has(.sticky) .nav-right .btn{display:none}}
+
+/* fix: HTML height attribute hint was overriding aspect-ratio boxes, making gallery/photo images render 1000+ px tall */
+img,video{height:auto}
