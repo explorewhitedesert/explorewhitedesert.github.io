@@ -22,6 +22,22 @@
 - No experience needed; the Bedouin team handles driving, camp and cooking.
 - Reviews: 5.0/5 on TripAdvisor ("White Desert Adventure", Bawiti): https://www.tripadvisor.com/Attraction_Review-g303850-d32977405-Reviews-White_Desert_Adventure-Bawiti_Giza_Governorate.html
 
+## Localized versions (13 languages)
+Each locale has its own homepage, 2-day program page, about, contact, reviews and photo gallery pages.
+- German: https://explorewhitedesert.github.io/de/ (+ /de/ueber-uns/ /de/kontakt/ /de/bewertungen/ /de/galerie/)
+- French: https://explorewhitedesert.github.io/fr/ (+ /fr/a-propos/ /fr/contact/ /fr/avis/ /fr/galerie/)
+- Spanish: https://explorewhitedesert.github.io/es/ (+ /es/sobre-nosotros/ /es/contacto/ /es/opiniones/ /es/galeria/)
+- Italian: https://explorewhitedesert.github.io/it/ (+ /it/chi-siamo/ /it/contatti/ /it/recensioni/ /it/galleria/)
+- Portuguese: https://explorewhitedesert.github.io/pt/ (+ /pt/sobre-nos/ /pt/contacto/ /pt/avaliacoes/ /pt/galeria/)
+- Dutch: https://explorewhitedesert.github.io/nl/ (+ /nl/over-ons/ /nl/contact/ /nl/reviews/ /nl/galerij/)
+- Polish: https://explorewhitedesert.github.io/pl/ (+ /pl/o-nas/ /pl/kontakt/ /pl/recenzje/ /pl/galeria/)
+- Czech: https://explorewhitedesert.github.io/cs/ (+ /cs/o-nas/ /cs/kontakt/ /cs/recenze/ /cs/galerie/)
+- Danish: https://explorewhitedesert.github.io/da/ (+ /da/om-os/ /da/kontakt/ /da/anmeldelser/ /da/galleri/)
+- Swedish: https://explorewhitedesert.github.io/sv/ (+ /sv/om-oss/ /sv/kontakt/ /sv/recensioner/ /sv/galleri/)
+- Russian: https://explorewhitedesert.github.io/ru/ (+ /ru/o-nas/ /ru/kontakty/ /ru/otzyvy/ /ru/galereya/)
+- Japanese: https://explorewhitedesert.github.io/ja/ (+ /ja/about/ /ja/contact/ /ja/reviews/ /ja/gallery/)
+- Korean: https://explorewhitedesert.github.io/ko/ (+ /ko/about/ /ko/contact/ /ko/reviews/ /ko/gallery/)
+
 ## Links
 
 ## About the operator
