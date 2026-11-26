@@ -14,3 +14,6 @@
 .ewd-share{margin:26px 0 0;font-size:.95rem;color:#5a5044}
 .ewd-share a{display:inline-block;margin-right:10px;color:#c1561f;text-decoration:none;font-weight:700}
 @media(max-width:720px){.ewd-wa-fab{right:14px;bottom:14px}}
+
+/* lift language pill above sticky booking bar */
+.sticky ~ .ewd-lang{bottom:96px}
