@@ -66,7 +66,7 @@ if (alts.length > 1) {
    sel.appendChild(o);
  });
  sel.addEventListener("change", function(){ location.href = sel.value; });
- if (sticky) { sel.style.bottom = (sticky.offsetHeight || 64) + 12 + "px"; if (window.innerWidth < 900 && document.documentElement.dir !== "rtl") { sel.style.left = "auto"; sel.style.right = "12px"; } }
+ if (sticky) { sel.style.bottom = (sticky.offsetHeight || 64) + 28 + "px"; if (window.innerWidth < 900 && document.documentElement.dir !== "rtl") { sel.style.left = "auto"; sel.style.right = "12px"; } }
  document.body.appendChild(sel);
 }
 
