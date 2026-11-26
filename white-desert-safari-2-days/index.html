@@ -356,9 +356,58 @@ footer small{opacity:.6;font-size:.8rem}
   </div>
 </header>
 <style>.trustbar{background:#140e08;color:#f7f1e7;padding:14px 0;font-size:.92rem}.trustbar .wrap{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:center}.trustbar span{white-space:nowrap;opacity:.92}.trustbar b{color:#e9b949}</style>
-<div class="trustbar"><div class="wrap"><span><b>&#10003;</b> Bedouin-run, local White Desert guides since 2001</span><span><b>&#9733;</b> 5.0 on TripAdvisor (12 reviews)</span><span><b>&#10003;</b> All photos from our own trips</span><span><b>&#10003;</b> You talk directly with the team on WhatsApp</span></div></div>
 
-<section style="padding:40px 0 0">
+<style>
+.tgal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:220px 220px;gap:6px;border-radius:18px;overflow:hidden;margin:26px 0}
+.tgal img,.tgal video{width:100%;height:100%;object-fit:cover;display:block}
+.tgal .big{grid-row:span 2}
+.tgal figure{margin:0;position:relative}
+@media (max-width:760px){.tgal{grid-template-columns:1fr 1fr;grid-template-rows:180px 180px 180px}.tgal .big{grid-column:span 2;grid-row:auto}}
+.cols{display:grid;grid-template-columns:1fr 340px;gap:36px;align-items:start}
+.cols .trip-main .wrap{width:100%;margin:0}
+@media (max-width:980px){.cols{grid-template-columns:1fr}}
+.bookcard{position:sticky;top:96px;background:#fff;border:1px solid #e5dccf;border-radius:18px;padding:24px;box-shadow:0 14px 44px rgba(43,28,16,.12)}
+.bookcard h3{margin:0 0 4px;font-size:1.25rem}
+.bookcard .sub{color:var(--ink-soft);font-size:.92rem;margin-bottom:14px}
+.bookcard ul{list-style:none;padding:0;margin:0 0 16px;font-size:.95rem}
+.bookcard ul li{padding:7px 0 7px 26px;position:relative;border-bottom:1px solid #f0e9dd}
+.bookcard ul li:last-child{border-bottom:0}
+.bookcard ul li:before{content:"\2713";position:absolute;left:0;color:#1faa55;font-weight:800}
+.bookcard .flash{background:#b3460f;color:#fff;border-radius:12px;padding:12px 14px;font-size:.92rem;line-height:1.45;margin-bottom:14px}
+.bookcard .flash b{color:#ffd9a8}
+.bookcard .btn{display:flex;width:100%;justify-content:center;margin:0 0 10px}
+.bookcard .lic{color:var(--ink-soft);font-size:.82rem;text-align:center;margin-top:8px}
+.hili{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
+@media (max-width:760px){.hili{grid-template-columns:1fr}}
+.hili li{padding-left:28px;position:relative;line-height:1.45}
+.hili li:before{content:"\2713";position:absolute;left:0;top:0;color:#b3460f;font-weight:800}
+.dayphotos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+@media (max-width:760px){.dayphotos{grid-template-columns:1fr}}
+.dayphotos figure{margin:0}
+.dayphotos img{width:100%;height:220px;object-fit:cover;border-radius:14px;display:block}
+.dayphotos figcaption{font-size:.88rem;color:var(--ink-soft);margin-top:6px}
+.tacard{background:#fff;border:1px solid #e5dccf;border-radius:18px;padding:24px;margin-top:18px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.tacard .score{font-size:2.6rem;font-weight:800;line-height:1}
+.tacard .stars{color:#e9b949;font-size:1.2rem;letter-spacing:2px}
+.faq details{background:#fff;border:1px solid #e5dccf;border-radius:12px;padding:14px 18px;margin:10px 0}
+.faq summary{font-weight:700;cursor:pointer}
+.faq details p{margin:10px 0 0;color:var(--ink-soft);line-height:1.55}
+@media (max-width:640px){.subhero{padding-top:170px}}
+@media (max-width:900px){.nav-right .btn{display:none}}
+</style>
+<div class="trustbar"><div class="wrap"><span><b>&#10003;</b> Bedouin-run, local White Desert guides since 2001</span><span><b>&#9733;</b> 5.0 on TripAdvisor (12 reviews)</span><span><b>&#10003;</b> All photos from our own trips</span><span><b>&#10003;</b> You talk directly with the team on WhatsApp</span></div></div>
+<section aria-label="Trip photos"><div class="wrap">
+<div class="tgal">
+<figure class="big"><img src="/img/mushroom-chicken-rock-golden.webp" alt="The Mushroom and Chicken chalk rock glowing gold in the White Desert" loading="lazy"></figure>
+<figure><img src="/img/black-desert-volcano-wide.webp" alt="Black volcanic hills of the Black Desert" loading="lazy"></figure>
+<figure><img src="/img/agabat-valley-from-ridge.webp" alt="Golden cliffs of Agabat Valley seen from the ridge" loading="lazy"></figure>
+<figure><img src="/img/campfire-tents.webp" alt="Campfire burning beside the tents at night camp" loading="lazy"></figure>
+<figure><video src="/vid/mushroom-rock-reveal.mp4" poster="/vid/mushroom-rock-reveal-poster.webp" muted loop playsinline controls preload="none"></video></figure>
+</div>
+</div></section>
+
+
+<div class="wrap" style="padding-top:8px"><div class="cols"><div class="trip-main"><section style="padding:40px 0 0">
   <div class="wrap">
     <div class="eyebrow reveal">Overview</div>
     <h2 class="reveal">The trip at a glance.</h2>
@@ -366,6 +415,21 @@ footer small{opacity:.6;font-size:.8rem}
   </div>
 </section><div class="ewd-ask" style="max-width:760px;margin:20px auto;padding:14px 18px;background:#fff;border:1px solid rgba(43,28,16,.12);border-radius:14px;text-align:center"><span style="font-weight:700">Questions? Ask us anything on WhatsApp</span> <a href="https://wa.me/201278220004?text=Hi%20Explore%20White%20Desert%21%20Quick%20question%3A" rel="noopener" style="color:#1faa55;font-weight:700;text-decoration:none">Ask us on WhatsApp &rarr;</a><span style="color:#5a5044;font-size:.9rem;display:block;margin-top:4px">We reply fast, usually within the hour. <span class="ewd-copy" data-num="+201278220004" style="cursor:pointer;text-decoration:underline dotted">+20 127 822 0004 &#10697;</span></span></div>
 
+
+<section><div class="wrap reveal">
+<div class="eyebrow">Highlights</div>
+<h2>The moments you will talk about.</h2>
+<ul class="hili">
+<li>Crystal Mountain, a ridge of natural quartz in the sand</li>
+<li>The golden cliffs of Agabat Valley</li>
+<li>The Black Desert's volcanic hills, then a swim in a cold natural spring</li>
+<li>Sunset between the white chalk formations</li>
+<li>Bedouin dinner cooked on the fire, with sweet tea</li>
+<li>A sky full of stars over your tent, no light pollution</li>
+<li>Sunrise between the white rocks</li>
+<li>The Mushroom and Chicken Rock, plus sandboarding on the dunes</li>
+</ul>
+</div></section>
 <section id="program">
   <div class="wrap">
     <div class="dayhead reveal"><div class="daynum">1</div><h3>Day 1: Cairo &rarr; Bahariya &rarr; the White Desert</h3></div>
@@ -383,7 +447,12 @@ footer small{opacity:.6;font-size:.8rem}
       <img width="1080" height="1350" src="/img/sunset-silhouette.webp" alt="Sunset silhouette in the White Desert" loading="lazy" style="border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%">
     </div>
   </div>
-<p class="wa-inline" style="text-align:center;margin:24px 0 4px"><a href="https://wa.me/201278220004?text=Hi%20Explore%20White%20Desert%21%20Quick%20question%3A" rel="noopener" style="display:inline-block;background:#1faa55;color:#fff;text-decoration:none;padding:10px 22px;border-radius:999px;font-weight:700;font-size:.95rem">Ask us on WhatsApp &rarr;</a></p></section>
+<p class="wa-inline" style="text-align:center;margin:24px 0 4px"><a href="https://wa.me/201278220004?text=Hi%20Explore%20White%20Desert%21%20Quick%20question%3A" rel="noopener" style="display:inline-block;background:#1faa55;color:#fff;text-decoration:none;padding:10px 22px;border-radius:999px;font-weight:700;font-size:.95rem">Ask us on WhatsApp &rarr;</a></p>
+<div class="wrap dayphotos">
+<figure><img src="/img/sunset-orange-white-tent-campfire.webp" alt="Orange sunset over the white tent and campfire on day 1" loading="lazy"><figcaption>Day 1 ends around the fire, after sunset between the formations.</figcaption></figure>
+<figure><img src="/img/camp-sunrise-tents-tables.webp" alt="Sunrise over the camp tents and breakfast tables on day 2" loading="lazy"><figcaption>Day 2 starts with sunrise between the white rocks and breakfast at camp.</figcaption></figure>
+</div>
+</section>
 
 <section class="included" id="included">
   <div class="wrap reveal">
@@ -394,6 +463,32 @@ footer small{opacity:.6;font-size:.8rem}
 <p class="wa-inline" style="text-align:center;margin:24px 0 4px"><a href="https://wa.me/201278220004?text=Hi%20Explore%20White%20Desert%21%20Quick%20question%3A" rel="noopener" style="display:inline-block;background:#1faa55;color:#fff;text-decoration:none;padding:10px 22px;border-radius:999px;font-weight:700;font-size:.95rem">Ask us on WhatsApp &rarr;</a></p></section>
 
 <div class="wrap reveal" style="margin-top:26px"><div style="border-radius:18px;overflow:hidden;border:1px solid #e5dccf"><iframe title="Map: Cairo to the White Desert" src="https://www.openstreetmap.org/export/embed.html?bbox=27.60%2C26.60%2C31.60%2C30.60&amp;layer=mapnik&amp;marker=27.38%2C28.18" style="width:100%;height:340px;border:0" loading="lazy"></iframe></div><p style="text-align:center;color:var(--ink-soft);font-size:.9rem;margin-top:8px">The white marker is the White Desert, about 370 km southwest of Cairo - we drive you there and back.</p></div>
+</div><aside class="bookcard" aria-label="Book this trip">
+<h3>2-Day / 1-Night White Desert Safari</h3>
+<div class="sub">From your Cairo hotel and back &middot; all-inclusive</div>
+<ul>
+<li>Small groups only, 1 to 10 people</li>
+<li>Free cancellation, no questions asked</li>
+<li>No prepayment: pay after your trip</li>
+<li>We reply fast, usually within the hour</li>
+</ul>
+<div class="flash"><b>December offer:</b> 15% off with code <b>FLASH15</b> &middot; first 5 bookings &middot; December departures &middot; mention the code on WhatsApp</div>
+<a class="btn" href="https://wa.me/201278220004?text=Hi%20Explore%20White%20Desert%21%20I%27d%20like%20to%20book%20the%202-day%20White%20Desert%20safari%20from%20Cairo.%20Please%20send%20me%20the%20price%20and%20available%20dates." rel="noopener"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>Book on WhatsApp</a>
+<div class="lic">Bedouin-run since 2001 &middot; Licensed by the Ministry of Tourism, No. 1542884</div>
+</aside></div></div>
+
+<section id="reviews"><div class="wrap reveal">
+<div class="eyebrow">Reviews</div>
+<h2>What travelers say.</h2>
+<div class="tacard">
+<div><div class="score">5.0</div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+<div>
+<p style="margin:0 0 6px;font-size:1.05rem"><b>5.0 out of 5 from 12 reviews on TripAdvisor.</b></p>
+<p style="margin:0;color:var(--ink-soft)">We are listed as <b>White Desert Adventure</b> in Bawiti, Bahariya Oasis. Every review is from travelers who did this trip with us.</p>
+<p style="margin:10px 0 0"><a href="https://www.tripadvisor.com/Attraction_Review-g303850-d32977405-Reviews-White_Desert_Adventure-Bawiti_Giza_Governorate.html" rel="noopener" style="color:#1faa55;font-weight:700">Read the reviews on TripAdvisor &rarr;</a></p>
+</div>
+</div>
+</div></section>
 <section id="good-to-know">
   <div class="wrap reveal">
     <div class="eyebrow">Good to know</div>
@@ -402,6 +497,17 @@ footer small{opacity:.6;font-size:.8rem}
     <p style="margin-top:1.6rem"><a class="btn" href="https://wa.me/201278220004?text=Hi%20Explore%20White%20Desert%21%20I%27d%20like%20to%20book%20the%202-day%20White%20Desert%20safari%20from%20Cairo.%20Please%20send%20me%20the%20price%20and%20available%20dates." rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.7 14.9L2 22l5.3-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.4-3c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.5 4 5.3 5.3 0 0 0 3.2.7 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg>Book on WhatsApp</a></p>
   </div>
 <p class="wa-inline" style="text-align:center;margin:24px 0 4px"><a href="https://wa.me/201278220004?text=Hi%20Explore%20White%20Desert%21%20Quick%20question%3A" rel="noopener" style="display:inline-block;background:#1faa55;color:#fff;text-decoration:none;padding:10px 22px;border-radius:999px;font-weight:700;font-size:.95rem">Ask us on WhatsApp &rarr;</a></p></section>
+
+<section id="faq" class="faq"><div class="wrap reveal">
+<div class="eyebrow">FAQ</div>
+<h2>Questions, answered.</h2>
+<details><summary>How do I book and pay?</summary><p>Message us on WhatsApp at +20 127 822 0004 and we reply with the price, open dates and everything you need. There is no prepayment and no payment link: you pay after your trip. Cancellation is free.</p></details>
+<details><summary>When does the trip start and end?</summary><p>We pick you up at your Cairo hotel around 7:00 on day 1 and drop you back there around 17:00-18:00 on day 2.</p></details>
+<details><summary>Is the trip suitable for solo travelers and women?</summary><p>Yes. Trips run in small groups of 1 to 10 people, and many of our guests are women traveling solo from Europe. You are part of a friendly group the whole way.</p></details>
+<details><summary>What should I bring?</summary><p>Warm layers for the desert night, sunscreen, sunglasses and a camera. We handle the driving, the camp and the cooking.</p></details>
+<details><summary>Can I bring my dog?</summary><p>Yes, dogs are allowed in the protected area.</p></details>
+<details><summary>Which languages do you speak?</summary><p>Our team speaks Arabic and English, and we can help in French, Spanish and Italian too.</p></details>
+</div></section>
 <section class="cta-band">
   <div class="wrap reveal">
     <h2>Ready to sleep under the stars?</h2>
