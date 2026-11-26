@@ -106,3 +106,15 @@ if (art) {
   window.addEventListener('resize',placeNav);
   placeNav();
 })();
+
+/* Copy-number taps: copy the number and count the intent */
+document.addEventListener("click", function(ev){
+  var el = ev.target && ev.target.closest ? ev.target.closest(".ewd-copy") : null;
+  if (!el) return;
+  var num = el.getAttribute("data-num") || "+201278220004";
+  try { if (navigator.clipboard) navigator.clipboard.writeText(num); } catch(e){}
+  try { if (window.goatcounter && window.goatcounter.count) window.goatcounter.count({path:"copy-number", event:true}); } catch(e){}
+  var old = el.textContent;
+  el.textContent = "\u2713 copied";
+  setTimeout(function(){ el.textContent = old; }, 1400);
+}, true);
