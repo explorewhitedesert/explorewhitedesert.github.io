@@ -523,5 +523,25 @@ footer small{opacity:.6;font-size:.8rem}
 </script>
 <script src="/site.js" defer></script>
 <script data-goatcounter="https://explorewhitedesert-github.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+<style>
+/* mobile trim: long stacked sections become swipe strips (content kept, SEO intact) */
+@media (max-width:759px){
+  #journey .cards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-inline:-20px;padding:4px 20px 14px;scrollbar-width:none}
+  #journey .cards::-webkit-scrollbar{display:none}
+  #journey .cards .card{flex:0 0 76%;scroll-snap-align:start}
+  #gallery .gallery-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin-inline:-20px;padding:4px 20px 14px;scrollbar-width:none}
+  #gallery .gallery-grid::-webkit-scrollbar{display:none}
+  #gallery .gallery-grid .gal{flex:0 0 62%;scroll-snap-align:start}
+  #gallery .gallery-grid .gal.wide{grid-column:auto;flex-basis:78%}
+  #reviews .quotes{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-20px;padding:4px 20px 14px;scrollbar-width:none}
+  #reviews .quotes::-webkit-scrollbar{display:none}
+  #reviews .quotes .quote{flex:0 0 82%;scroll-snap-align:start}
+  #from-europe .photos{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;scrollbar-width:none}
+  #from-europe .photos::-webkit-scrollbar{display:none}
+  #from-europe .photos img{flex:0 0 62%;scroll-snap-align:start}
+  #from-europe .photos img:first-child{grid-column:auto;aspect-ratio:3/4}
+}
+</style>
 </body>
 </html>
