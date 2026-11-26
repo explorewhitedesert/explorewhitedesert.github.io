@@ -512,4 +512,16 @@
   <url><loc>https://explorewhitedesert.github.io/about/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://explorewhitedesert.github.io/contact/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://explorewhitedesert.github.io/reviews/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/de/ueber-uns/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/de/kontakt/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/de/bewertungen/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/fr/a-propos/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/fr/contact/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/fr/avis/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/es/sobre-nosotros/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/es/contacto/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/es/opiniones/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/it/chi-siamo/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/it/contatti/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://explorewhitedesert.github.io/it/recensioni/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
