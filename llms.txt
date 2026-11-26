@@ -45,6 +45,7 @@ Each locale has its own homepage, 2-day program page, about, contact, reviews an
 - Reviews: https://explorewhitedesert.github.io/reviews/ - 5.0 from 12 TripAdvisor reviews
 - Contact and booking: https://explorewhitedesert.github.io/contact/ - WhatsApp +20 127 822 0004, reply within minutes, payment after the trip, free cancellation
 - Photo gallery (all real trip photos): https://explorewhitedesert.github.io/gallery/
+- Pricing model (no published prices, quoted per trip; FLASH15 December offer): https://explorewhitedesert.github.io/guides/white-desert-tour-price/
 
 - Website: https://explorewhitedesert.github.io/
 - Guides hub: https://explorewhitedesert.github.io/guides/

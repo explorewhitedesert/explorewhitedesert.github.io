@@ -564,4 +564,7 @@
  <url><loc>https://explorewhitedesert.github.io/ru/galereya/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
  <url><loc>https://explorewhitedesert.github.io/ja/gallery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
  <url><loc>https://explorewhitedesert.github.io/ko/gallery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+ <url><loc>https://explorewhitedesert.github.io/guides/white-desert-tour-price/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+ <url><loc>https://explorewhitedesert.github.io/guides/is-white-desert-safe/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+ <url><loc>https://explorewhitedesert.github.io/guides/white-desert-day-trip-vs-overnight/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>
