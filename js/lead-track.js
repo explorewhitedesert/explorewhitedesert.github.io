@@ -36,23 +36,35 @@
     } catch (e) { cb('?'); }
   }
 
-  function send(link) {
+  function post(details) {
     country(function (cty) {
       try {
         var fd = new FormData();
         fd.append(F_PAGE, location.pathname);
         fd.append(F_SOURCE, source());
         fd.append(F_COUNTRY, cty);
-        var mobile = /Mobi|Android/i.test(navigator.userAgent) ? 'mobile' : 'desktop';
-        fd.append(F_DETAILS, new Date().toISOString() + ' | ' + mobile + ' | ' + (link.textContent || '').trim().slice(0, 60) + ' | lang=' + (navigator.language || '?'));
+        fd.append(F_DETAILS, details);
         if (navigator.sendBeacon && navigator.sendBeacon(ENDPOINT, fd)) return;
         fetch(ENDPOINT, { method: 'POST', mode: 'no-cors', body: fd });
       } catch (e) {}
     });
   }
 
+  function device() { return /Mobi|Android/i.test(navigator.userAgent) ? 'mobile' : 'desktop'; }
+
+  function send(link) {
+    post(new Date().toISOString() + ' | ' + device() + ' | ' + (link.textContent || '').trim().slice(0, 60) + ' | lang=' + (navigator.language || '?'));
+  }
+
+  function sendFunnel(link) {
+    post('funnel | home->' + (link.getAttribute('data-funnel') || '?') + ' | ' + device() + ' | lang=' + (navigator.language || '?'));
+  }
+
   document.addEventListener('click', function (ev) {
-    var a = ev.target && ev.target.closest ? ev.target.closest('a[href*="wa.me/201278220004"]') : null;
-    if (a) send(a);
+    if (!ev.target || !ev.target.closest) return;
+    var a = ev.target.closest('a[href*="wa.me/201278220004"]');
+    if (a) { send(a); return; }
+    var f = ev.target.closest('a[data-funnel]');
+    if (f) sendFunnel(f);
   }, true);
 })();
