@@ -52,3 +52,5 @@ details.langdd>.langs{display:flex}
   details.langdd[open]>.langs{display:flex}
   details.langdd>.langs a{padding:9px 14px;font-size:.9rem;border-radius:8px;white-space:nowrap}
 }
+
+@media(max-width:899px){.ewd-lang{display:none}}
