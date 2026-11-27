@@ -1070,4 +1070,39 @@
   <xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/white-desert-from-netherlands/"/>
   <changefreq>monthly</changefreq>
  </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/white-desert-from-poland/</loc>
+  <lastmod>2026-11-28</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io/white-desert-from-poland/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/white-desert-from-poland/"/>
+  <changefreq>monthly</changefreq>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/white-desert-from-italy/</loc>
+  <lastmod>2026-11-28</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io/white-desert-from-italy/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/white-desert-from-italy/"/>
+  <changefreq>monthly</changefreq>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/white-desert-from-spain/</loc>
+  <lastmod>2026-11-28</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io/white-desert-from-spain/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/white-desert-from-spain/"/>
+  <changefreq>monthly</changefreq>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/white-desert-from-uk/</loc>
+  <lastmod>2026-11-28</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io/white-desert-from-uk/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/white-desert-from-uk/"/>
+  <changefreq>monthly</changefreq>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/white-desert-from-nordic-countries/</loc>
+  <lastmod>2026-11-28</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io/white-desert-from-nordic-countries/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/white-desert-from-nordic-countries/"/>
+  <changefreq>monthly</changefreq>
+ </url>
 </urlset>
