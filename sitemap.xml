@@ -750,4 +750,32 @@
   <xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/white-desert-safari-2-days/"/>
   <changefreq>weekly</changefreq>
  </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/white-desert-from-hurghada/</loc>
+  <lastmod>2026-11-27</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io/white-desert-from-hurghada/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/white-desert-from-hurghada/"/>
+  <changefreq>weekly</changefreq>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/white-desert-from-sharm-el-sheikh/</loc>
+  <lastmod>2026-11-27</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io/white-desert-from-sharm-el-sheikh/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/white-desert-from-sharm-el-sheikh/"/>
+  <changefreq>weekly</changefreq>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/white-desert-from-luxor/</loc>
+  <lastmod>2026-11-27</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io/white-desert-from-luxor/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/white-desert-from-luxor/"/>
+  <changefreq>weekly</changefreq>
+ </url>
+ <url>
+  <loc>https://explorewhitedesert.github.io/white-desert-from-cairo-hotels/</loc>
+  <lastmod>2026-11-27</lastmod>
+  <xhtml:link rel="alternate" hreflang="en" href="https://explorewhitedesert.github.io/white-desert-from-cairo-hotels/"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://explorewhitedesert.github.io/white-desert-from-cairo-hotels/"/>
+  <changefreq>weekly</changefreq>
+ </url>
 </urlset>
