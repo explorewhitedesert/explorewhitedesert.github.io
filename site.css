@@ -54,3 +54,8 @@ details.langdd>.langs{display:flex}
 }
 
 @media(max-width:899px){.ewd-lang{display:none}}
+
+/* === Conversion pass 2026-11-28: shorter hero on phones so the CTA and the next section peek above the fold === */
+@media (max-width:899px){
+  .hero{min-height:80svh}
+}
